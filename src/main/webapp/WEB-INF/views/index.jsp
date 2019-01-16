@@ -1,6 +1,5 @@
-<!doctype html>
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt"%>
 <html lang="en">
-
 <head>
 	<meta charset="utf-8">
 	<title></title>
@@ -19,10 +18,11 @@
 		<nav class="bg-dark absolute transparent">
 			<div class="nav-bar">
 				<div class="module left">
-					<a href="index.html">
+					<a href="index.jsp">
 						<img class="logo logo-light" alt="Globex Corporation" src="img/logo-light.png">
 						<img class="logo logo-dark" alt="Globex Corporation" src="img/logo-dark.png">
 					</a>
+					<span> - ${msg}</span>
 				</div>
 				<div class="module widget-handle mobile-toggle right visible-sm visible-xs">
 					<i class="ti-menu"></i>
