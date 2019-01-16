@@ -4,12 +4,12 @@
 	<meta charset="utf-8">
 	<title></title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link href="css/font-awesome.min.css" rel="stylesheet" type="text/css" media="all">
-	<link href="css/themify-icons.css" rel="stylesheet" type="text/css" media="all" />
-	<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
-	<link href="css/flexslider.css" rel="stylesheet" type="text/css" media="all" />
-	<link href="css/theme.css" rel="stylesheet" type="text/css" media="all" />
-	<link href="css/custom.css" rel="stylesheet" type="text/css" media="all" />
+	<link href="resources/css/font-awesome.min.css" rel="stylesheet" type="text/css" media="all">
+	<link href="resources/css/themify-icons.css" rel="stylesheet" type="text/css" media="all" />
+	<link href="resources/css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+	<link href="resources/css/flexslider.css" rel="stylesheet" type="text/css" media="all" />
+	<link href="resources/css/theme.css" rel="stylesheet" type="text/css" media="all" />
+	<link href="resources/css/custom.css" rel="stylesheet" type="text/css" media="all" />
 	<link href='http://fonts.googleapis.com/css?family=Lato:300,400%7CRaleway:100,400,300,500,600,700%7COpen+Sans:400,500,600'
 	 rel='stylesheet' type='text/css'>
 </head>
@@ -18,9 +18,9 @@
 		<nav class="bg-dark absolute transparent">
 			<div class="nav-bar">
 				<div class="module left">
-					<a href="index.jsp">
-						<img class="logo logo-light" alt="Globex Corporation" src="img/logo-light.png">
-						<img class="logo logo-dark" alt="Globex Corporation" src="img/logo-dark.png">
+					<a href="/">
+						<img class="logo logo-light" alt="Globex Corporation" src="resources/img/logo-light.png">
+						<img class="logo logo-dark" alt="Globex Corporation" src="resources/img/logo-dark.png">
 					</a>
 					<span> - ${msg}</span>
 				</div>
@@ -31,7 +31,7 @@
 					<div class="module left">
 						<ul class="menu">
 							<li>
-								<a href="#">Home</a>
+								<a href="/">Home</a>
 							</li>
 
 							<li>
@@ -71,12 +71,12 @@
 			<ul class="slides">
 				<li class="overlay image-bg">
 					<div class="background-image-holder">
-						<img alt="image" class="background-image" src="img/buildings1.jpg">
+						<img alt="image" class="background-image" src="resources/img/buildings1.jpg">
 					</div>
 					<div class="container v-align-transform">
 						<div class="row">
 							<div class="col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2 text-center">
-								<img alt="Logo" class="image-small mb8" src="img/logo-light.png">
+								<img alt="Logo" class="image-small mb8" src="resources/img/logo-light.png">
 								<h6 class="uppercase mb32" style="font-size: 1.2em;">Not an evil organization.</h6>
 								<p class="text-center mb0">
 									We belive in the power of teams.  We take care of our employees, have fitness rooms 
@@ -92,7 +92,7 @@
 		</section>
 		<section class="image-bg overlay parallax pt180 pb180 pt-xs-80 pb-xs-80 background-multiply">
 			<div class="background-image-holder">
-				<img alt="image" class="background-image" src="img/mountain.jpg">
+				<img alt="image" class="background-image" src="resources/img/mountain.jpg">
 			</div>
 
 			<div class="container">
@@ -113,7 +113,7 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-sm-4">
-						<a href="#"><img class="image-xxs fade-half" alt="Pic" src="img/logo-light.png"></a>
+						<a href="#"><img class="image-xxs fade-half" alt="Pic" src="resources/img/logo-light.png"></a>
 					</div>
 
 					<div class="col-sm-4 text-center">
@@ -136,11 +136,11 @@
 	</div>
 
 
-	<script src="js/jquery.min.js"></script>
-	<script src="js/bootstrap.min.js"></script>
-	<script src="js/flexslider.min.js"></script>
-	<script src="js/parallax.js"></script>
-	<script src="js/scripts.js"></script>
+	<script src="resources/js/jquery.min.js"></script>
+	<script src="resources/js/bootstrap.min.js"></script>
+	<script src="resources/js/flexslider.min.js"></script>
+	<script src="resources/js/parallax.js"></script>
+	<script src="resources/js/scripts.js"></script>
 </body>
 
 </html>
