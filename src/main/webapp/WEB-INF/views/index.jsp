@@ -25,6 +25,7 @@
 				</li>
 			</ul>
 		</section>
+		<!--
 		<section class="image-bg overlay parallax pt180 pb180 pt-xs-80 pb-xs-80">
 			<div class="background-image-holder">
 				<img alt="image" class="background-image" src="resources/img/mountain.jpg">
@@ -44,6 +45,6 @@
 			</div>
 
 		</section>
-
+		-->
 
 		<jsp:include page="footer.jsp"/>
