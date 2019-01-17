@@ -1,67 +1,5 @@
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt"%>
-<html lang="en">
-<head>
-	<meta charset="utf-8">
-	<title></title>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link href="resources/css/font-awesome.min.css" rel="stylesheet" type="text/css" media="all">
-	<link href="resources/css/themify-icons.css" rel="stylesheet" type="text/css" media="all" />
-	<link href="resources/css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
-	<link href="resources/css/flexslider.css" rel="stylesheet" type="text/css" media="all" />
-	<link href="resources/css/theme.css" rel="stylesheet" type="text/css" media="all" />
-	<link href="resources/css/custom.css" rel="stylesheet" type="text/css" media="all" />
-	<link href='http://fonts.googleapis.com/css?family=Lato:300,400%7CRaleway:100,400,300,500,600,700%7COpen+Sans:400,500,600'
-	 rel='stylesheet' type='text/css'>
-</head>
-<body class="btn-rounded scroll-assist">
-	<div class="nav-container">
-		<nav class="bg-dark absolute transparent">
-			<div class="nav-bar">
-				<div class="module left">
-					<a href="/">
-						<img class="logo logo-light" alt="Globex Corporation" src="resources/img/logo-light.png">
-						<img class="logo logo-dark" alt="Globex Corporation" src="resources/img/logo-dark.png">
-					</a>
-					<span> - ${msg}</span>
-				</div>
-				<div class="module widget-handle mobile-toggle right visible-sm visible-xs">
-					<i class="ti-menu"></i>
-				</div>
-				<div class="module-group right">
-					<div class="module left">
-						<ul class="menu">
-							<li>
-								<a href="/">Home</a>
-							</li>
-							<li>
-								<a href="#">About</a>
-							</li>
-							<li>
-								<a href="#">Careers</a>
-							</li>
-							<li>
-								<a href="#">
-									Locations
-								</a>
-								<ul>
-									<li>
-										<a href="#">
-											Cypress Creek
-										</a>
-									</li>
-									<li>
-										<a href="#">
-											Secret Mountain Facility
-										</a>
-									</li>
-								</ul>
-							</li>
-						</ul>
-					</div>
-				</div>
-			</div>
-		</nav>
-	</div>
+<jsp:include page="header.jsp"/>
 
 	<div class="main-container">
 		<section class="cover fullscreen image-slider slider-arrow-controls controls-inside parallax background-multiply">
@@ -87,7 +25,7 @@
 				</li>
 			</ul>
 		</section>
-		<section class="image-bg overlay parallax pt180 pb180 pt-xs-80 pb-xs-80 background-multiply">
+		<section class="image-bg overlay parallax pt180 pb180 pt-xs-80 pb-xs-80">
 			<div class="background-image-holder">
 				<img alt="image" class="background-image" src="resources/img/mountain.jpg">
 			</div>
@@ -106,38 +44,6 @@
 			</div>
 
 		</section>
-		<footer class="footer-2 bg-dark text-center-xs">
-			<div class="container">
-				<div class="row">
-					<div class="col-sm-4">
-						<a href="#"><img class="image-xxs fade-half" alt="Pic" src="resources/img/logo-light.png"></a>
-					</div>
-
-					<div class="col-sm-4 text-center">
-						<span class="fade-half">
-							© Copyright 2019 Globex Corporation - All Rights Reserved
-						</span>
-					</div>
-
-					<div class="col-sm-4 text-right text-center-xs">
-						<ul class="list-inline social-list">
-							<li><a href="#"><i class="ti-twitter-alt"></i></a></li>
-							<li><a href="#"><i class="ti-facebook"></i></a></li>
-							<li><a href="#"><i class="ti-dribbble"></i></a></li>
-							<li><a href="#"><i class="ti-vimeo-alt"></i></a></li>
-						</ul>
-					</div>
-				</div>
-			</div>
-		</footer>
-	</div>
 
 
-	<script src="resources/js/jquery.min.js"></script>
-	<script src="resources/js/bootstrap.min.js"></script>
-	<script src="resources/js/flexslider.min.js"></script>
-	<script src="resources/js/parallax.js"></script>
-	<script src="resources/js/scripts.js"></script>
-</body>
-
-</html>
+		<jsp:include page="footer.jsp"/>
