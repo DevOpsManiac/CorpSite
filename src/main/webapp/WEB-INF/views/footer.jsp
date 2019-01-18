@@ -28,5 +28,4 @@
         <script src="resources/js/parallax.js"></script>
         <script src="resources/js/scripts.js"></script>
     </body>
-
 </html>
