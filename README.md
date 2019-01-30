@@ -1,8 +1,8 @@
 # CorpSite
 
-This is our corporate website
+This is our corporate website.
 
 
-# How about that
+# Need to build the site out.
 
 
