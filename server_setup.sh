@@ -58,3 +58,10 @@ server {
 }
 EOF
 sudo service nginx restart
+
+
+# add to /opt/tomcat/conf/server.xml above </host>
+#<Context path="" docBase="globex-web">
+#    <!-- Default set of monitored resources -->
+#    <WatchedResource>WEB-INF/web.xml</WatchedResource>
+#</Context>
