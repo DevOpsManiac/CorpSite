@@ -1,7 +1,7 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <title></title>
+        <title>Globex - we're not evil</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="resources/css/font-awesome.min.css" rel="stylesheet" type="text/css" media="all">
         <link href="resources/css/themify-icons.css" rel="stylesheet" type="text/css" media="all" />
