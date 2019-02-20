@@ -1,6 +1,15 @@
 <!--
 DevOps demo data
 version: 2/19/2019
+
+
+1. ensure the instance has change management and performance analytics
+2. activate the Agile 2.0 plugin
+3. install the DevOps app
+4. submit the std change template for approval
+5. approve the std change as DevOps.admin
+
+
 -->
 <unload unload_date="2019-02-19 23:26:48">
     <sys_user_group action="INSERT_OR_UPDATE">
@@ -85,6 +94,567 @@ version: 2/19/2019
         <web_service_access_only>false</web_service_access_only>
         <zip />
     </sys_user>
+    <sys_user_has_role action="INSERT_OR_UPDATE">
+        <granted_by display_value="">not-applicable</granted_by>
+        <included_in_role display_value=""/>
+        <included_in_role_instance display_value=""/>
+        <inh_count>3</inh_count>
+        <inh_map>cdbd68059f0002003d5c77a0942e70ec</inh_map>
+        <inherited>true</inherited>
+        <role display_value="scrum_story_creator" name="scrum_story_creator">01695301efa31000a7450fa3f82256ef</role>
+        <state>active</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-02-19 17:27:28</sys_created_on>
+        <sys_id>3e2bff18dbbb670064ccd4f3ce96192c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-02-19 17:27:28</sys_updated_on>
+        <user display_value="DevOps Admin">f0f7e922dbeb630064ccd4f3ce9619e9</user>
+    </sys_user_has_role>
+    <sys_user_has_role action="INSERT_OR_UPDATE">
+        <granted_by display_value="">not-applicable</granted_by>
+        <included_in_role display_value=""/>
+        <included_in_role_instance display_value=""/>
+        <inh_count>1</inh_count>
+        <inh_map>cdbd68059f0002003d5c77a0942e70ec</inh_map>
+        <inherited>true</inherited>
+        <role display_value="connection_admin" name="connection_admin">0320730db3323200350086d256a8dcd9</role>
+        <state>active</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-02-13 20:15:29</sys_created_on>
+        <sys_id>a5186d22dbeb630064ccd4f3ce961939</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-02-13 20:15:29</sys_updated_on>
+        <user display_value="DevOps Admin">f0f7e922dbeb630064ccd4f3ce9619e9</user>
+    </sys_user_has_role>
+    <sys_user_has_role action="INSERT_OR_UPDATE">
+        <granted_by display_value="">not-applicable</granted_by>
+        <included_in_role display_value=""/>
+        <included_in_role_instance display_value=""/>
+        <inh_count>2</inh_count>
+        <inh_map>cdbd68059f0002003d5c77a0942e70ec</inh_map>
+        <inherited>true</inherited>
+        <role display_value="task_editor" name="task_editor">0956f6390a0a0bc50064623d5d51c556</role>
+        <state>active</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-02-19 17:27:28</sys_created_on>
+        <sys_id>362bff18dbbb670064ccd4f3ce961920</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-02-19 17:27:28</sys_updated_on>
+        <user display_value="DevOps Admin">f0f7e922dbeb630064ccd4f3ce9619e9</user>
+    </sys_user_has_role>
+    <sys_user_has_role action="INSERT_OR_UPDATE">
+        <granted_by display_value="">not-applicable</granted_by>
+        <included_in_role display_value=""/>
+        <included_in_role_instance display_value=""/>
+        <inh_count>9</inh_count>
+        <inh_map>cdbd68059f0002003d5c77a0942e70ec</inh_map>
+        <inherited>true</inherited>
+        <role display_value="scrum_user" name="scrum_user">0e38f60b0a0a2c395bf4d4b2a29ddf9b</role>
+        <state>active</state>
+        <sys_created_by>system</sys_created_by>
+        <sys_created_on>2019-02-15 15:49:47</sys_created_on>
+        <sys_id>997e7a4bdbafa30064ccd4f3ce961946</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2019-02-15 15:49:47</sys_updated_on>
+        <user display_value="DevOps Admin">f0f7e922dbeb630064ccd4f3ce9619e9</user>
+    </sys_user_has_role>
+    <sys_user_has_role action="INSERT_OR_UPDATE">
+        <granted_by display_value="">not-applicable</granted_by>
+        <included_in_role display_value=""/>
+        <included_in_role_instance display_value=""/>
+        <inh_count>1</inh_count>
+        <inh_map>cdbd68059f0002003d5c77a0942e70ec</inh_map>
+        <inherited>true</inherited>
+        <role display_value="action_designer" name="action_designer">11bc76b20b0222008e650851c5673a66</role>
+        <state>active</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-02-13 20:15:29</sys_created_on>
+        <sys_id>69186d22dbeb630064ccd4f3ce96193b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-02-13 20:15:29</sys_updated_on>
+        <user display_value="DevOps Admin">f0f7e922dbeb630064ccd4f3ce9619e9</user>
+    </sys_user_has_role>
+    <sys_user_has_role action="INSERT_OR_UPDATE">
+        <granted_by display_value="">not-applicable</granted_by>
+        <included_in_role display_value=""/>
+        <included_in_role_instance display_value=""/>
+        <inh_count>2</inh_count>
+        <inh_map>cdbd68059f0002003d5c77a0942e70ec</inh_map>
+        <inherited>true</inherited>
+        <role display_value="dependency_views" name="dependency_views">14fa2dc39f230200ee6219eb552e7006</role>
+        <state>active</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-02-13 20:15:29</sys_created_on>
+        <sys_id>a5186d22dbeb630064ccd4f3ce961926</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-02-13 20:15:29</sys_updated_on>
+        <user display_value="DevOps Admin">f0f7e922dbeb630064ccd4f3ce9619e9</user>
+    </sys_user_has_role>
+    <sys_user_has_role action="INSERT_OR_UPDATE">
+        <granted_by display_value="">not-applicable</granted_by>
+        <included_in_role display_value=""/>
+        <included_in_role_instance display_value=""/>
+        <inh_count>2</inh_count>
+        <inh_map>cdbd68059f0002003d5c77a0942e70ec</inh_map>
+        <inherited>true</inherited>
+        <role display_value="itil" name="itil">282bf1fac6112285017366cb5f867469</role>
+        <state>active</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-02-13 20:15:29</sys_created_on>
+        <sys_id>e5186d22dbeb630064ccd4f3ce96191b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-02-13 20:15:29</sys_updated_on>
+        <user display_value="DevOps Admin">f0f7e922dbeb630064ccd4f3ce9619e9</user>
+    </sys_user_has_role>
+    <sys_user_has_role action="INSERT_OR_UPDATE">
+        <granted_by display_value="">not-applicable</granted_by>
+        <included_in_role display_value=""/>
+        <included_in_role_instance display_value=""/>
+        <inh_count>1</inh_count>
+        <inh_map>cdbd68059f0002003d5c77a0942e70ec</inh_map>
+        <inherited>true</inherited>
+        <role display_value="rm_product_admin" name="rm_product_admin">2e5c07117f0000017e82d18303fa7cca</role>
+        <state>active</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-02-19 17:27:28</sys_created_on>
+        <sys_id>7e2bff18dbbb670064ccd4f3ce961918</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-02-19 17:27:28</sys_updated_on>
+        <user display_value="DevOps Admin">f0f7e922dbeb630064ccd4f3ce9619e9</user>
+    </sys_user_has_role>
+    <sys_user_has_role action="INSERT_OR_UPDATE">
+        <granted_by display_value="">not-applicable</granted_by>
+        <included_in_role display_value=""/>
+        <included_in_role_instance display_value=""/>
+        <inh_count>1</inh_count>
+        <inh_map>cdbd68059f0002003d5c77a0942e70ec</inh_map>
+        <inherited>true</inherited>
+        <role display_value="rm_task_admin" name="rm_task_admin">2e5c8e247f00000127a0c8aa1d95dd55</role>
+        <state>active</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-02-19 17:27:28</sys_created_on>
+        <sys_id>3e2bff18dbbb670064ccd4f3ce96191b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-02-19 17:27:28</sys_updated_on>
+        <user display_value="DevOps Admin">f0f7e922dbeb630064ccd4f3ce9619e9</user>
+    </sys_user_has_role>
+    <sys_user_has_role action="INSERT_OR_UPDATE">
+        <granted_by display_value="">not-applicable</granted_by>
+        <included_in_role display_value=""/>
+        <included_in_role_instance display_value=""/>
+        <inh_count>1</inh_count>
+        <inh_map>cdbd68059f0002003d5c77a0942e70ec</inh_map>
+        <inherited>true</inherited>
+        <role display_value="rm_test_admin" name="rm_test_admin">2e62ad997f0000011921febf337ba75b</role>
+        <state>active</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-02-19 17:27:28</sys_created_on>
+        <sys_id>f62bff18dbbb670064ccd4f3ce961922</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-02-19 17:27:28</sys_updated_on>
+        <user display_value="DevOps Admin">f0f7e922dbeb630064ccd4f3ce9619e9</user>
+    </sys_user_has_role>
+    <sys_user_has_role action="INSERT_OR_UPDATE">
+        <granted_by display_value="">not-applicable</granted_by>
+        <included_in_role display_value=""/>
+        <included_in_role_instance display_value=""/>
+        <inh_count>1</inh_count>
+        <inh_map>cdbd68059f0002003d5c77a0942e70ec</inh_map>
+        <inherited>true</inherited>
+        <role display_value="rm_doc_admin" name="rm_doc_admin">2e62d6d27f000001735a0ac426a28855</role>
+        <state>active</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-02-19 17:27:28</sys_created_on>
+        <sys_id>ba2bff18dbbb670064ccd4f3ce961916</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-02-19 17:27:28</sys_updated_on>
+        <user display_value="DevOps Admin">f0f7e922dbeb630064ccd4f3ce9619e9</user>
+    </sys_user_has_role>
+    <sys_user_has_role action="INSERT_OR_UPDATE">
+        <granted_by display_value="">not-applicable</granted_by>
+        <included_in_role display_value=""/>
+        <included_in_role_instance display_value=""/>
+        <inh_count/>
+        <inh_map/>
+        <inherited>false</inherited>
+        <role display_value="scrum_admin" name="scrum_admin">2e6671ed7f00000176bde2f701c7c650</role>
+        <state>active</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-02-19 17:27:28</sys_created_on>
+        <sys_id>ba2bff18dbbb670064ccd4f3ce961910</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-02-19 17:27:28</sys_updated_on>
+        <user display_value="DevOps Admin">f0f7e922dbeb630064ccd4f3ce9619e9</user>
+    </sys_user_has_role>
+    <sys_user_has_role action="INSERT_OR_UPDATE">
+        <granted_by display_value="">not-applicable</granted_by>
+        <included_in_role display_value=""/>
+        <included_in_role_instance display_value=""/>
+        <inh_count>1</inh_count>
+        <inh_map>cdbd68059f0002003d5c77a0942e70ec</inh_map>
+        <inherited>true</inherited>
+        <role display_value="rm_story_admin" name="rm_story_admin">2e66f7d67f00000119b4b2f28d2c20b1</role>
+        <state>active</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-02-19 17:27:28</sys_created_on>
+        <sys_id>ba2bff18dbbb670064ccd4f3ce961924</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-02-19 17:27:28</sys_updated_on>
+        <user display_value="DevOps Admin">f0f7e922dbeb630064ccd4f3ce9619e9</user>
+    </sys_user_has_role>
+    <sys_user_has_role action="INSERT_OR_UPDATE">
+        <granted_by display_value="">not-applicable</granted_by>
+        <included_in_role display_value=""/>
+        <included_in_role_instance display_value=""/>
+        <inh_count>1</inh_count>
+        <inh_map>cdbd68059f0002003d5c77a0942e70ec</inh_map>
+        <inherited>true</inherited>
+        <role display_value="rm_epic_admin" name="rm_epic_admin">2e67688a7f0000017e2e1a2bf5785073</role>
+        <state>active</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-02-19 17:27:28</sys_created_on>
+        <sys_id>722bff18dbbb670064ccd4f3ce96191e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-02-19 17:27:28</sys_updated_on>
+        <user display_value="DevOps Admin">f0f7e922dbeb630064ccd4f3ce9619e9</user>
+    </sys_user_has_role>
+    <sys_user_has_role action="INSERT_OR_UPDATE">
+        <granted_by display_value="">not-applicable</granted_by>
+        <included_in_role display_value=""/>
+        <included_in_role_instance display_value=""/>
+        <inh_count>1</inh_count>
+        <inh_map>cdbd68059f0002003d5c77a0942e70ec</inh_map>
+        <inherited>true</inherited>
+        <role display_value="rm_release_scrum_admin" name="rm_release_scrum_admin">2e678c8c7f0000015ae015760a9fc21a</role>
+        <state>active</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-02-19 17:27:28</sys_created_on>
+        <sys_id>f62bff18dbbb670064ccd4f3ce961914</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-02-19 17:27:28</sys_updated_on>
+        <user display_value="DevOps Admin">f0f7e922dbeb630064ccd4f3ce9619e9</user>
+    </sys_user_has_role>
+    <sys_user_has_role action="INSERT_OR_UPDATE">
+        <granted_by display_value="">not-applicable</granted_by>
+        <included_in_role display_value=""/>
+        <included_in_role_instance display_value=""/>
+        <inh_count>1</inh_count>
+        <inh_map>cdbd68059f0002003d5c77a0942e70ec</inh_map>
+        <inherited>true</inherited>
+        <role display_value="rm_sprint_admin" name="rm_sprint_admin">2e67b4877f0000017d0e0867c7b83326</role>
+        <state>active</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-02-19 17:27:28</sys_created_on>
+        <sys_id>7e2bff18dbbb670064ccd4f3ce961926</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-02-19 17:27:28</sys_updated_on>
+        <user display_value="DevOps Admin">f0f7e922dbeb630064ccd4f3ce9619e9</user>
+    </sys_user_has_role>
+    <sys_user_has_role action="INSERT_OR_UPDATE">
+        <granted_by display_value="">not-applicable</granted_by>
+        <included_in_role display_value=""/>
+        <included_in_role_instance display_value=""/>
+        <inh_count>1</inh_count>
+        <inh_map>cdbd68059f0002003d5c77a0942e70ec</inh_map>
+        <inherited>true</inherited>
+        <role display_value="flow_operator" name="flow_operator">36e3325dcb623200a30bb895634c9c4f</role>
+        <state>active</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-02-13 20:15:29</sys_created_on>
+        <sys_id>e1186d22dbeb630064ccd4f3ce961937</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-02-13 20:15:29</sys_updated_on>
+        <user display_value="DevOps Admin">f0f7e922dbeb630064ccd4f3ce9619e9</user>
+    </sys_user_has_role>
+    <sys_user_has_role action="INSERT_OR_UPDATE">
+        <granted_by display_value="">not-applicable</granted_by>
+        <included_in_role display_value=""/>
+        <included_in_role_instance display_value=""/>
+        <inh_count/>
+        <inh_map/>
+        <inherited>false</inherited>
+        <role display_value="scrum_product_owner" name="scrum_product_owner">37aa2741efa31000a7450fa3f822568a</role>
+        <state>active</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-02-19 17:27:28</sys_created_on>
+        <sys_id>fa2bff18dbbb670064ccd4f3ce96192a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-02-19 17:27:28</sys_updated_on>
+        <user display_value="DevOps Admin">f0f7e922dbeb630064ccd4f3ce9619e9</user>
+    </sys_user_has_role>
+    <sys_user_has_role action="INSERT_OR_UPDATE">
+        <granted_by display_value="">not-applicable</granted_by>
+        <included_in_role display_value=""/>
+        <included_in_role_instance display_value=""/>
+        <inh_count>2</inh_count>
+        <inh_map>cdbd68059f0002003d5c77a0942e70ec</inh_map>
+        <inherited>true</inherited>
+        <role display_value="template_editor" name="template_editor">440f0ac645072300aadb28ef70de71db</role>
+        <state>active</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-02-13 20:15:29</sys_created_on>
+        <sys_id>a5186d22dbeb630064ccd4f3ce961910</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-02-13 20:15:29</sys_updated_on>
+        <user display_value="DevOps Admin">f0f7e922dbeb630064ccd4f3ce9619e9</user>
+    </sys_user_has_role>
+    <sys_user_has_role action="INSERT_OR_UPDATE">
+        <granted_by display_value="">not-applicable</granted_by>
+        <included_in_role display_value=""/>
+        <included_in_role_instance display_value=""/>
+        <inh_count>2</inh_count>
+        <inh_map>cdbd68059f0002003d5c77a0942e70ec</inh_map>
+        <inherited>true</inherited>
+        <role display_value="cmdb_query_builder" name="cmdb_query_builder">45af8773d7002200c1ed0fbc5e61037a</role>
+        <state>active</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-02-13 20:15:29</sys_created_on>
+        <sys_id>69186d22dbeb630064ccd4f3ce961928</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-02-13 20:15:29</sys_updated_on>
+        <user display_value="DevOps Admin">f0f7e922dbeb630064ccd4f3ce9619e9</user>
+    </sys_user_has_role>
+    <sys_user_has_role action="INSERT_OR_UPDATE">
+        <granted_by display_value="">not-applicable</granted_by>
+        <included_in_role display_value=""/>
+        <included_in_role_instance display_value=""/>
+        <inh_count>1</inh_count>
+        <inh_map>cdbd68059f0002003d5c77a0942e70ec</inh_map>
+        <inherited>true</inherited>
+        <role display_value="sn_devops.user" name="sn_devops.user">4bc2437887302300f97abba826cb0bc0</role>
+        <state>active</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-02-13 20:15:29</sys_created_on>
+        <sys_id>e9186d22dbeb630064ccd4f3ce961912</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-02-13 20:15:29</sys_updated_on>
+        <user display_value="DevOps Admin">f0f7e922dbeb630064ccd4f3ce9619e9</user>
+    </sys_user_has_role>
+    <sys_user_has_role action="INSERT_OR_UPDATE">
+        <granted_by display_value="">not-applicable</granted_by>
+        <included_in_role display_value=""/>
+        <included_in_role_instance display_value=""/>
+        <inh_count>2</inh_count>
+        <inh_map>cdbd68059f0002003d5c77a0942e70ec</inh_map>
+        <inherited>true</inherited>
+        <role display_value="credential_admin" name="credential_admin">4ceaf119471311003961ffa0ec9a7154</role>
+        <state>active</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-02-13 20:15:29</sys_created_on>
+        <sys_id>25186d22dbeb630064ccd4f3ce961919</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-02-13 20:15:29</sys_updated_on>
+        <user display_value="DevOps Admin">f0f7e922dbeb630064ccd4f3ce9619e9</user>
+    </sys_user_has_role>
+    <sys_user_has_role action="INSERT_OR_UPDATE">
+        <granted_by display_value="">not-applicable</granted_by>
+        <included_in_role display_value=""/>
+        <included_in_role_instance display_value=""/>
+        <inh_count>1</inh_count>
+        <inh_map>cdbd68059f0002003d5c77a0942e70ec</inh_map>
+        <inherited>true</inherited>
+        <role display_value="flow_designer" name="flow_designer">5a6498600b3122008e650851c5673aff</role>
+        <state>active</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-02-13 20:15:29</sys_created_on>
+        <sys_id>6d186d22dbeb630064ccd4f3ce96191f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-02-13 20:15:29</sys_updated_on>
+        <user display_value="DevOps Admin">f0f7e922dbeb630064ccd4f3ce9619e9</user>
+    </sys_user_has_role>
+    <sys_user_has_role action="INSERT_OR_UPDATE">
+        <granted_by display_value="">not-applicable</granted_by>
+        <included_in_role display_value=""/>
+        <included_in_role_instance display_value=""/>
+        <inh_count/>
+        <inh_map/>
+        <inherited>false</inherited>
+        <role display_value="snc_internal" name="snc_internal">7fcaa702933002009c8579b4f47ffbde</role>
+        <state>active</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-02-19 15:49:03</sys_created_on>
+        <sys_id>d9a4e7d4db7b670064ccd4f3ce961923</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-02-19 15:49:03</sys_updated_on>
+        <user display_value="DevOps Admin">f0f7e922dbeb630064ccd4f3ce9619e9</user>
+    </sys_user_has_role>
+    <sys_user_has_role action="INSERT_OR_UPDATE">
+        <granted_by display_value="">not-applicable</granted_by>
+        <included_in_role display_value=""/>
+        <included_in_role_instance display_value=""/>
+        <inh_count>3</inh_count>
+        <inh_map>cdbd68059f0002003d5c77a0942e70ec</inh_map>
+        <inherited>true</inherited>
+        <role display_value="view_changer" name="view_changer">8a454be00a0a0b8c00de7dae26869165</role>
+        <state>active</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-02-13 20:15:29</sys_created_on>
+        <sys_id>61186d22dbeb630064ccd4f3ce961917</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-02-13 20:15:29</sys_updated_on>
+        <user display_value="DevOps Admin">f0f7e922dbeb630064ccd4f3ce9619e9</user>
+    </sys_user_has_role>
+    <sys_user_has_role action="INSERT_OR_UPDATE">
+        <granted_by display_value="">not-applicable</granted_by>
+        <included_in_role display_value=""/>
+        <included_in_role_instance display_value=""/>
+        <inh_count>1</inh_count>
+        <inh_map>cdbd68059f0002003d5c77a0942e70ec</inh_map>
+        <inherited>true</inherited>
+        <role display_value="agent_admin" name="agent_admin">8d1f97f0c611227d0100078c7573be2f</role>
+        <state>active</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-02-13 20:15:29</sys_created_on>
+        <sys_id>21186d22dbeb630064ccd4f3ce961922</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-02-13 20:15:29</sys_updated_on>
+        <user display_value="DevOps Admin">f0f7e922dbeb630064ccd4f3ce9619e9</user>
+    </sys_user_has_role>
+    <sys_user_has_role action="INSERT_OR_UPDATE">
+        <granted_by display_value="">not-applicable</granted_by>
+        <included_in_role display_value=""/>
+        <included_in_role_instance display_value=""/>
+        <inh_count/>
+        <inh_map/>
+        <inherited>false</inherited>
+        <role display_value="scrum_release_planner" name="scrum_release_planner">92685301efa31000a7450fa3f82256ec</role>
+        <state>active</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-02-19 17:27:28</sys_created_on>
+        <sys_id>7a2bff18dbbb670064ccd4f3ce961933</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-02-19 17:27:28</sys_updated_on>
+        <user display_value="DevOps Admin">f0f7e922dbeb630064ccd4f3ce9619e9</user>
+    </sys_user_has_role>
+    <sys_user_has_role action="INSERT_OR_UPDATE">
+        <granted_by display_value="">not-applicable</granted_by>
+        <included_in_role display_value=""/>
+        <included_in_role_instance display_value=""/>
+        <inh_count>1</inh_count>
+        <inh_map>cdbd68059f0002003d5c77a0942e70ec</inh_map>
+        <inherited>true</inherited>
+        <role display_value="scrum_release_planner" name="scrum_release_planner">92685301efa31000a7450fa3f82256ec</role>
+        <state>active</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-02-19 17:27:28</sys_created_on>
+        <sys_id>fa2bff18dbbb670064ccd4f3ce96192f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-02-19 17:27:28</sys_updated_on>
+        <user display_value="DevOps Admin">f0f7e922dbeb630064ccd4f3ce9619e9</user>
+    </sys_user_has_role>
+    <sys_user_has_role action="INSERT_OR_UPDATE">
+        <granted_by display_value="">not-applicable</granted_by>
+        <included_in_role display_value=""/>
+        <included_in_role_instance display_value=""/>
+        <inh_count>1</inh_count>
+        <inh_map>cdbd68059f0002003d5c77a0942e70ec</inh_map>
+        <inherited>true</inherited>
+        <role display_value="pa_data_collector" name="pa_data_collector">a640c173bf101100b96dac808c0739de</role>
+        <state>active</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-02-13 20:15:29</sys_created_on>
+        <sys_id>3d186d22dbeb630064ccd4f3ce96193d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-02-13 20:15:29</sys_updated_on>
+        <user display_value="DevOps Admin">f0f7e922dbeb630064ccd4f3ce9619e9</user>
+    </sys_user_has_role>
+    <sys_user_has_role action="INSERT_OR_UPDATE">
+        <granted_by display_value="">not-applicable</granted_by>
+        <included_in_role display_value=""/>
+        <included_in_role_instance display_value=""/>
+        <inh_count>3</inh_count>
+        <inh_map>cdbd68059f0002003d5c77a0942e70ec</inh_map>
+        <inherited>true</inherited>
+        <role display_value="pa_viewer" name="pa_viewer">a90d30b3bf101100b96dac808c073950</role>
+        <state>active</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-02-13 20:15:29</sys_created_on>
+        <sys_id>ad186d22dbeb630064ccd4f3ce961914</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-02-13 20:15:29</sys_updated_on>
+        <user display_value="DevOps Admin">f0f7e922dbeb630064ccd4f3ce9619e9</user>
+    </sys_user_has_role>
+    <sys_user_has_role action="INSERT_OR_UPDATE">
+        <granted_by display_value="">not-applicable</granted_by>
+        <included_in_role display_value=""/>
+        <included_in_role_instance display_value=""/>
+        <inh_count>2</inh_count>
+        <inh_map>cdbd68059f0002003d5c77a0942e70ec</inh_map>
+        <inherited>true</inherited>
+        <role display_value="app_service_user" name="app_service_user">b3dd3ccec32203003e76741e81d3ae95</role>
+        <state>active</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-02-13 20:15:29</sys_created_on>
+        <sys_id>e1186d22dbeb630064ccd4f3ce961924</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-02-13 20:15:29</sys_updated_on>
+        <user display_value="DevOps Admin">f0f7e922dbeb630064ccd4f3ce9619e9</user>
+    </sys_user_has_role>
+    <sys_user_has_role action="INSERT_OR_UPDATE">
+        <granted_by display_value="">not-applicable</granted_by>
+        <included_in_role display_value=""/>
+        <included_in_role_instance display_value=""/>
+        <inh_count>2</inh_count>
+        <inh_map>cdbd68059f0002003d5c77a0942e70ec</inh_map>
+        <inherited>true</inherited>
+        <role display_value="certification" name="certification">ba4509c60a00070400cc0f3a60a0d30a</role>
+        <state>active</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-02-13 20:15:29</sys_created_on>
+        <sys_id>a9186d22dbeb630064ccd4f3ce96191d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-02-13 20:15:29</sys_updated_on>
+        <user display_value="DevOps Admin">f0f7e922dbeb630064ccd4f3ce9619e9</user>
+    </sys_user_has_role>
+    <sys_user_has_role action="INSERT_OR_UPDATE">
+        <granted_by display_value="">not-applicable</granted_by>
+        <included_in_role display_value=""/>
+        <included_in_role_instance display_value=""/>
+        <inh_count/>
+        <inh_map/>
+        <inherited>false</inherited>
+        <role display_value="sn_devops.admin" name="sn_devops.admin">e582037887302300f97abba826cb0b48</role>
+        <state>active</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-02-13 20:15:29</sys_created_on>
+        <sys_id>25182d22dbeb630064ccd4f3ce9619bf</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-02-13 20:15:29</sys_updated_on>
+        <user display_value="DevOps Admin">f0f7e922dbeb630064ccd4f3ce9619e9</user>
+    </sys_user_has_role>
     <sys_user action="INSERT_OR_UPDATE">
         <active>true</active>
         <building display_value="" />
@@ -146,6 +716,235 @@ version: 2/19/2019
         <web_service_access_only>false</web_service_access_only>
         <zip />
     </sys_user>
+    <sys_user_has_role action="INSERT_OR_UPDATE">
+        <granted_by display_value="">not-applicable</granted_by>
+        <included_in_role display_value=""/>
+        <included_in_role_instance display_value=""/>
+        <inh_count>2</inh_count>
+        <inh_map>cdbd68059f0002003d5c77a0942e70ec</inh_map>
+        <inherited>true</inherited>
+        <role display_value="scrum_user" name="scrum_user">0e38f60b0a0a2c395bf4d4b2a29ddf9b</role>
+        <state>active</state>
+        <sys_created_by>system</sys_created_by>
+        <sys_created_on>2019-02-15 15:49:47</sys_created_on>
+        <sys_id>557e7a4bdbafa30064ccd4f3ce961944</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2019-02-15 15:49:47</sys_updated_on>
+        <user display_value="Kit Corry">c7186d22dbeb630064ccd4f3ce9619b2</user>
+    </sys_user_has_role>
+    <sys_user_has_role action="INSERT_OR_UPDATE">
+        <granted_by display_value="">not-applicable</granted_by>
+        <included_in_role display_value=""/>
+        <included_in_role_instance display_value=""/>
+        <inh_count>1</inh_count>
+        <inh_map>cdbd68059f0002003d5c77a0942e70ec</inh_map>
+        <inherited>true</inherited>
+        <role display_value="dependency_views" name="dependency_views">14fa2dc39f230200ee6219eb552e7006</role>
+        <state>active</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-02-13 20:16:06</sys_created_on>
+        <sys_id>a638ed22dbeb630064ccd4f3ce96190e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-02-13 20:16:06</sys_updated_on>
+        <user display_value="Kit Corry">c7186d22dbeb630064ccd4f3ce9619b2</user>
+    </sys_user_has_role>
+    <sys_user_has_role action="INSERT_OR_UPDATE">
+        <granted_by display_value="">not-applicable</granted_by>
+        <included_in_role display_value=""/>
+        <included_in_role_instance display_value=""/>
+        <inh_count>1</inh_count>
+        <inh_map>cdbd68059f0002003d5c77a0942e70ec</inh_map>
+        <inherited>true</inherited>
+        <role display_value="itil" name="itil">282bf1fac6112285017366cb5f867469</role>
+        <state>active</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-02-13 20:16:06</sys_created_on>
+        <sys_id>e638ed22dbeb630064ccd4f3ce961903</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-02-13 20:16:06</sys_updated_on>
+        <user display_value="Kit Corry">c7186d22dbeb630064ccd4f3ce9619b2</user>
+    </sys_user_has_role>
+    <sys_user_has_role action="INSERT_OR_UPDATE">
+        <granted_by display_value="">not-applicable</granted_by>
+        <included_in_role display_value=""/>
+        <included_in_role_instance display_value=""/>
+        <inh_count>1</inh_count>
+        <inh_map>cdbd68059f0002003d5c77a0942e70ec</inh_map>
+        <inherited>true</inherited>
+        <role display_value="template_editor" name="template_editor">440f0ac645072300aadb28ef70de71db</role>
+        <state>active</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-02-13 20:16:06</sys_created_on>
+        <sys_id>26386d22dbeb630064ccd4f3ce96195a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-02-13 20:16:06</sys_updated_on>
+        <user display_value="Kit Corry">c7186d22dbeb630064ccd4f3ce9619b2</user>
+    </sys_user_has_role>
+    <sys_user_has_role action="INSERT_OR_UPDATE">
+        <granted_by display_value="">not-applicable</granted_by>
+        <included_in_role display_value=""/>
+        <included_in_role_instance display_value=""/>
+        <inh_count>1</inh_count>
+        <inh_map>cdbd68059f0002003d5c77a0942e70ec</inh_map>
+        <inherited>true</inherited>
+        <role display_value="cmdb_query_builder" name="cmdb_query_builder">45af8773d7002200c1ed0fbc5e61037a</role>
+        <state>active</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-02-13 20:16:06</sys_created_on>
+        <sys_id>6a38ed22dbeb630064ccd4f3ce961910</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-02-13 20:16:06</sys_updated_on>
+        <user display_value="Kit Corry">c7186d22dbeb630064ccd4f3ce9619b2</user>
+    </sys_user_has_role>
+    <sys_user_has_role action="INSERT_OR_UPDATE">
+        <granted_by display_value="">not-applicable</granted_by>
+        <included_in_role display_value=""/>
+        <included_in_role_instance display_value=""/>
+        <inh_count/>
+        <inh_map/>
+        <inherited>false</inherited>
+        <role display_value="sn_devops.user" name="sn_devops.user">4bc2437887302300f97abba826cb0bc0</role>
+        <state>active</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-02-13 20:16:06</sys_created_on>
+        <sys_id>26386d22dbeb630064ccd4f3ce961957</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-02-13 20:16:06</sys_updated_on>
+        <user display_value="Kit Corry">c7186d22dbeb630064ccd4f3ce9619b2</user>
+    </sys_user_has_role>
+    <sys_user_has_role action="INSERT_OR_UPDATE">
+        <granted_by display_value="">not-applicable</granted_by>
+        <included_in_role display_value=""/>
+        <included_in_role_instance display_value=""/>
+        <inh_count/>
+        <inh_map/>
+        <inherited>false</inherited>
+        <role display_value="snc_internal" name="snc_internal">7fcaa702933002009c8579b4f47ffbde</role>
+        <state>active</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-02-20 15:11:07</sys_created_on>
+        <sys_id>5f856c3cdb37a70064ccd4f3ce961903</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-02-20 15:11:07</sys_updated_on>
+        <user display_value="Kit Corry">c7186d22dbeb630064ccd4f3ce9619b2</user>
+    </sys_user_has_role>
+    <sys_user_has_role action="INSERT_OR_UPDATE">
+        <granted_by display_value="">not-applicable</granted_by>
+        <included_in_role display_value=""/>
+        <included_in_role_instance display_value=""/>
+        <inh_count>1</inh_count>
+        <inh_map>cdbd68059f0002003d5c77a0942e70ec</inh_map>
+        <inherited>true</inherited>
+        <role display_value="view_changer" name="view_changer">8a454be00a0a0b8c00de7dae26869165</role>
+        <state>active</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-02-13 20:16:06</sys_created_on>
+        <sys_id>2238ed22dbeb630064ccd4f3ce96190a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-02-13 20:16:06</sys_updated_on>
+        <user display_value="Kit Corry">c7186d22dbeb630064ccd4f3ce9619b2</user>
+    </sys_user_has_role>
+    <sys_user_has_role action="INSERT_OR_UPDATE">
+        <granted_by display_value="">not-applicable</granted_by>
+        <included_in_role display_value=""/>
+        <included_in_role_instance display_value=""/>
+        <inh_count>1</inh_count>
+        <inh_map>cdbd68059f0002003d5c77a0942e70ec</inh_map>
+        <inherited>true</inherited>
+        <role display_value="pa_viewer" name="pa_viewer">a90d30b3bf101100b96dac808c073950</role>
+        <state>active</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-02-13 20:16:06</sys_created_on>
+        <sys_id>6e38ed22dbeb630064ccd4f3ce961907</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-02-13 20:16:06</sys_updated_on>
+        <user display_value="Kit Corry">c7186d22dbeb630064ccd4f3ce9619b2</user>
+    </sys_user_has_role>
+    <sys_user_has_role action="INSERT_OR_UPDATE">
+        <granted_by display_value="">not-applicable</granted_by>
+        <included_in_role display_value=""/>
+        <included_in_role_instance display_value=""/>
+        <inh_count>1</inh_count>
+        <inh_map>cdbd68059f0002003d5c77a0942e70ec</inh_map>
+        <inherited>true</inherited>
+        <role display_value="app_service_user" name="app_service_user">b3dd3ccec32203003e76741e81d3ae95</role>
+        <state>active</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-02-13 20:16:06</sys_created_on>
+        <sys_id>e238ed22dbeb630064ccd4f3ce96190c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-02-13 20:16:06</sys_updated_on>
+        <user display_value="Kit Corry">c7186d22dbeb630064ccd4f3ce9619b2</user>
+    </sys_user_has_role>
+    <sys_user_has_role action="INSERT_OR_UPDATE">
+        <granted_by display_value="">not-applicable</granted_by>
+        <included_in_role display_value=""/>
+        <included_in_role_instance display_value=""/>
+        <inh_count>1</inh_count>
+        <inh_map>cdbd68059f0002003d5c77a0942e70ec</inh_map>
+        <inherited>true</inherited>
+        <role display_value="certification" name="certification">ba4509c60a00070400cc0f3a60a0d30a</role>
+        <state>active</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-02-13 20:16:06</sys_created_on>
+        <sys_id>aa38ed22dbeb630064ccd4f3ce961905</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-02-13 20:16:06</sys_updated_on>
+        <user display_value="Kit Corry">c7186d22dbeb630064ccd4f3ce9619b2</user>
+    </sys_user_has_role>
+    <sys_user_grmember action="INSERT_OR_UPDATE">
+        <group display_value="CorpSite Dev" name="CorpSite Dev">5b58a162dbeb630064ccd4f3ce96194b</group>
+        <points>0</points>
+        <scrum_role/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-02-20 18:08:43</sys_created_on>
+        <sys_id>b03e8574db3b2300c49df5861d961923</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-02-20 18:08:43</sys_updated_on>
+        <user display_value="Kit Corry">c7186d22dbeb630064ccd4f3ce9619b2</user>
+    </sys_user_grmember>
+    <sys_user_grmember action="INSERT_OR_UPDATE">
+        <group display_value="CorpSite Dev" name="CorpSite Dev">5b58a162dbeb630064ccd4f3ce96194b</group>
+        <points>0</points>
+        <scrum_role/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-02-20 18:08:43</sys_created_on>
+        <sys_id>f43e8574db3b2300c49df5861d96191b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-02-20 18:08:43</sys_updated_on>
+        <user display_value="DevOps Admin">f0f7e922dbeb630064ccd4f3ce9619e9</user>
+    </sys_user_grmember>
+    <!-- 
+Add DevOps Admin to the change management group so they can approve the std change template
+-->
+    <sys_user_grmember action="INSERT_OR_UPDATE">
+        <group display_value="Change Management" name="Change Management">a715cd759f2002002920bde8132e7018</group>
+        <points>0</points>
+        <scrum_role/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-02-20 18:14:24</sys_created_on>
+        <sys_id>908fc1b4db3b2300c49df5861d961978</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-02-20 18:14:24</sys_updated_on>
+        <user display_value="DevOps Admin">f0f7e922dbeb630064ccd4f3ce9619e9</user>
+    </sys_user_grmember>
+    <!-- 
+Create standard change proposal.  
+-->
     <std_change_proposal action="INSERT_OR_UPDATE">
         <active>true</active>
         <activity_due />
@@ -702,93 +1501,93 @@ Describe the tests that will be carried out after implementation to confirm
         <work_start />
     </rm_epic>
     <rm_story action="INSERT_OR_UPDATE">
-        <acceptance_criteria />
+        <acceptance_criteria/>
         <active>true</active>
-        <activity_due />
-        <additional_assignee_list />
+        <activity_due/>
+        <additional_assignee_list/>
         <allow_dates_outside_schedule>false</allow_dates_outside_schedule>
         <approval>not requested</approval>
-        <approval_history />
-        <approval_set />
-        <assigned_to display_value="" />
-        <assignment_group display_value="" />
+        <approval_history/>
+        <approval_set/>
+        <assigned_to display_value="Kit Corry">c7186d22dbeb630064ccd4f3ce9619b2</assigned_to>
+        <assignment_group display_value="CorpSite Dev" name="CorpSite Dev">5b58a162dbeb630064ccd4f3ce96194b</assignment_group>
         <backlog_type>product</backlog_type>
         <benefits>0</benefits>
         <blocked>false</blocked>
-        <blocked_reason />
+        <blocked_reason/>
         <budget_cost>0</budget_cost>
-        <business_duration />
-        <business_service display_value="" />
+        <business_duration/>
+        <business_service display_value=""/>
         <calculation_type>automatic</calculation_type>
-        <calendar_duration />
+        <calendar_duration/>
         <capex_cost>0</capex_cost>
         <classification>Feature</classification>
-        <close_notes />
-        <closed_at />
-        <closed_by display_value="" />
-        <cmdb_ci display_value="" />
-        <comments />
-        <comments_and_work_notes />
-        <company display_value="" />
-        <contact_type />
-        <correlation_display />
-        <correlation_id />
+        <close_notes/>
+        <closed_at/>
+        <closed_by display_value=""/>
+        <cmdb_ci display_value=""/>
+        <comments/>
+        <comments_and_work_notes/>
+        <company display_value=""/>
+        <contact_type/>
+        <correlation_display/>
+        <correlation_id/>
         <cost>0</cost>
         <critical_path>false</critical_path>
-        <defect display_value="" />
-        <delivery_plan display_value="" />
-        <delivery_task display_value="" />
-        <demand display_value="" />
-        <dependency />
-        <description />
-        <due_date />
+        <defect display_value=""/>
+        <delivery_plan display_value=""/>
+        <delivery_task display_value=""/>
+        <demand display_value=""/>
+        <dependency/>
+        <description/>
+        <due_date/>
         <duration>1970-01-02 00:00:00</duration>
-        <effort />
+        <effort/>
         <end_date>2019-02-15 17:13:32</end_date>
-        <end_date_derived_from display_value="" />
-        <enhancement display_value="" />
+        <end_date_derived_from display_value=""/>
+        <enhancement display_value=""/>
         <epic display_value="Career Search">a2315b8bdbefa30064ccd4f3ce961963</epic>
         <escalation>0</escalation>
-        <expected_start />
-        <follow_up />
+        <expected_start/>
+        <follow_up/>
         <global_rank>4000100000</global_rank>
-        <group_list />
-        <group_rank />
-        <html_description />
+        <group_list/>
+        <group_rank/>
+        <html_description/>
         <impact>3</impact>
         <key_milestone>false</key_milestone>
         <knowledge>false</knowledge>
-        <level />
-        <location display_value="" />
+        <level/>
+        <location display_value=""/>
         <made_sla>true</made_sla>
         <milestone>false</milestone>
-        <mpp_task_id />
+        <mpp_task_id/>
         <number>STRY0010001</number>
         <opened_at>2019-02-15 17:13:32</opened_at>
         <opened_by display_value="System Administrator">6816f79cc0a8016401c5a33be04be441</opened_by>
         <opex_cost>0</opex_cost>
-        <order />
-        <orig_sys_id display_value="" />
-        <orig_top_task_id display_value="" />
-        <parent display_value="" />
-        <parent_feature display_value="" />
+        <order/>
+        <orig_sys_id display_value=""/>
+        <orig_top_task_id display_value=""/>
+        <parent display_value=""/>
+        <parent_feature display_value=""/>
         <percent_complete>0</percent_complete>
         <phase_type>waterfall</phase_type>
         <priority>4</priority>
         <product display_value="CorpSite">b5e0578bdbefa30064ccd4f3ce96192b</product>
-        <product_rank />
+        <product_rank/>
         <product_rel_index>100000</product_rel_index>
-        <project display_value="" />
-        <project_index />
-        <project_phase display_value="" />
-        <rank />
-        <reassignment_count>0</reassignment_count>
-        <rejection_goto display_value="" />
-        <relation_applied display_value="" />
-        <release display_value="" />
-        <release_index />
-        <remaining_duration />
-        <remaining_effort />
+        <project display_value=""/>
+        <project_index/>
+        <project_phase display_value=""/>
+        <rank/>
+        <reassignment_count>1</reassignment_count>
+        <rejection_goto display_value=""/>
+        <relation_applied display_value=""/>
+        <release display_value="CorpSite 1.0">7a42e5a8db73af00811177421f961923</release>
+        <release_index>100000</release_index>
+        <remaining_duration/>
+        <remaining_effort/>
         <resource_allocated_cost>0</resource_allocated_cost>
         <resource_planned_cost>0</resource_planned_cost>
         <rollup>false</rollup>
@@ -796,56 +1595,75 @@ Describe the tests that will be carried out after implementation to confirm
         <schedule_start_date>2019-02-15 17:13:32</schedule_start_date>
         <shadow>false</shadow>
         <short_description>Add careers link to main nav</short_description>
-        <skills />
-        <sla_due />
-        <sprint display_value="" />
-        <sprint_index />
+        <skills/>
+        <sla_due/>
+        <sprint display_value=""/>
+        <sprint_index/>
         <start_date>2019-02-15 17:13:32</start_date>
-        <start_date_derived_from display_value="" />
+        <start_date_derived_from display_value=""/>
         <state>-6</state>
         <status>green</status>
-        <story_points />
-        <sub_tree_root display_value="" />
+        <story_points/>
+        <sub_tree_root display_value=""/>
         <sys_class_name>rm_story</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2019-02-15 17:13:45</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>77919f8bdbefa30064ccd4f3ce96193c</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2019-02-15 17:13:45</sys_updated_on>
+        <sys_updated_on>2019-02-20 18:20:21</sys_updated_on>
         <task>Add careers link to main nav​STRY0010001</task>
-        <team display_value="" />
-        <team_index />
-        <theme display_value="" />
+        <team display_value=""/>
+        <team_index/>
+        <theme display_value=""/>
         <time_card_at_top_task>false</time_card_at_top_task>
         <time_constraint>asap</time_constraint>
-        <time_worked />
-        <top_portfolio display_value="" />
-        <top_program display_value="" />
+        <time_worked/>
+        <top_portfolio display_value=""/>
+        <top_program display_value=""/>
         <top_task display_value="STRY0010001">77919f8bdbefa30064ccd4f3ce96193c</top_task>
-        <type />
+        <type/>
         <upon_approval>proceed</upon_approval>
         <upon_reject>cancel</upon_reject>
         <urgency>3</urgency>
-        <user_input />
-        <variables />
-        <version />
-        <watch_list />
-        <wbs />
-        <wbs_order />
-        <wf_activity display_value="" />
+        <user_input/>
+        <variables/>
+        <version/>
+        <watch_list/>
+        <wbs/>
+        <wbs_order/>
+        <wf_activity display_value=""/>
         <work_cost>0</work_cost>
-        <work_duration />
-        <work_effort />
-        <work_end />
-        <work_notes />
-        <work_notes_list />
-        <work_start />
+        <work_duration/>
+        <work_effort/>
+        <work_end/>
+        <work_notes/>
+        <work_notes_list/>
+        <work_start/>
     </rm_story>
-
-        <sn_devops_pipeline action="INSERT_OR_UPDATE">
+    <backlog_definition action="INSERT_OR_UPDATE">
+        <filter table="rm_story">sys_class_name=rm_story^active=true^sprintISEMPTY^assignment_group=5b58a162dbeb630064ccd4f3ce96194b^EQ
+            <item goto="false" or="false" field="sys_class_name" endquery="false" value="rm_story" operator="=" newquery="false"/>
+            <item goto="false" or="false" field="active" endquery="false" value="true" operator="=" newquery="false"/>
+            <item goto="false" or="false" field="sprint" endquery="false" value="" operator="ISEMPTY" newquery="false"/>
+            <item goto="false" or="false" field="assignment_group" endquery="false" value="5b58a162dbeb630064ccd4f3ce96194b" operator="=" newquery="false" display_table="sys_user_group" display_value="CorpSite Dev"/>
+            <item goto="false" or="false" field="" endquery="true" value="" operator="=" newquery="false"/>
+        </filter>
+        <name>CorpSite</name>
+        <owner display_value="System Administrator">6816f79cc0a8016401c5a33be04be441</owner>
+        <shared_with/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-02-20 18:23:31</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>93719538db3b2300c49df5861d96190b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-02-20 18:23:31</sys_updated_on>
+        <table>rm_story</table>
+    </backlog_definition>
+    <sn_devops_pipeline action="INSERT_OR_UPDATE">
         <description>Breakfix pipeline with more testing</description>
         <name>Breakfix</name>
         <sys_created_by>kit.corry</sys_created_by>
@@ -909,8 +1727,6 @@ Describe the tests that will be carried out after implementation to confirm
         <sys_updated_by>kit.corry</sys_updated_by>
         <sys_updated_on>2019-02-11 07:35:16</sys_updated_on>
     </sn_devops_stage>
-
-    
     <basic_auth_credentials action="INSERT_OR_UPDATE">
         <active>true</active>
         <applies_to>all</applies_to>
@@ -1082,7 +1898,6 @@ Describe the tests that will be carried out after implementation to confirm
         <url_builder>false</url_builder>
         <use_mid>false</use_mid>
     </http_connection>
-
     <sn_devops_planning_tool action="INSERT_OR_UPDATE">
         <asset display_value=""/>
         <asset_tag/>
@@ -1251,5 +2066,430 @@ Describe the tests that will be carried out after implementation to confirm
         <warranty_expiration/>
         <webhook_url>https://&lt;DevOps integration user ID&gt;:&lt;integration user password&gt;@devopsdemo1.service-now.com/api/sn_devops/tool/event/27a528b5db272300588cf9361d9619f5</webhook_url>
     </sn_devops_planning_tool>
-
+    <sn_devops_code_tool action="INSERT_OR_UPDATE">
+        <asset display_value=""/>
+        <asset_tag/>
+        <assigned/>
+        <assigned_to display_value=""/>
+        <assignment_group display_value=""/>
+        <attributes/>
+        <can_print>false</can_print>
+        <category/>
+        <change_control display_value=""/>
+        <checked_in/>
+        <checked_out/>
+        <comments/>
+        <company display_value=""/>
+        <connected_date/>
+        <connection_alias display_value="sn_devops.GitHub">ceaacef4b36223001e18a7e4c6a8dc83</connection_alias>
+        <connection_state>connected</connection_state>
+        <correlation_id/>
+        <cost/>
+        <cost_cc>USD</cost_cc>
+        <cost_center display_value=""/>
+        <delivery_date/>
+        <department display_value=""/>
+        <discovery_source/>
+        <dns_domain/>
+        <due/>
+        <due_in/>
+        <fault_count>0</fault_count>
+        <first_discovered/>
+        <fqdn/>
+        <gl_account/>
+        <install_date/>
+        <install_status>1</install_status>
+        <invoice_number/>
+        <ip_address/>
+        <justification/>
+        <last_discovered/>
+        <last_discovery>2019-02-20 03:39:51</last_discovery>
+        <lease_id/>
+        <location display_value=""/>
+        <mac_address/>
+        <maintenance_schedule display_value=""/>
+        <managed_by display_value=""/>
+        <manufacturer display_value=""/>
+        <model_id display_value=""/>
+        <model_number/>
+        <monitor>false</monitor>
+        <name>github.com</name>
+        <operational_status>1</operational_status>
+        <order_date/>
+        <owned_by display_value=""/>
+        <po_number/>
+        <purchase_date/>
+        <schedule display_value=""/>
+        <serial_number/>
+        <short_description/>
+        <skip_sync>false</skip_sync>
+        <start_date/>
+        <subcategory/>
+        <support_group display_value=""/>
+        <supported_by display_value=""/>
+        <sys_class_name>sn_devops_code_tool</sys_class_name>
+        <sys_class_path>/!!/$#/!!</sys_class_path>
+        <sys_created_by>kit.corry</sys_created_by>
+        <sys_created_on>2019-02-11 07:49:59</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>c43ae879db272300588cf9361d9619eb</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2019-02-20 03:39:51</sys_updated_on>
+        <tool_url>https://github.com</tool_url>
+        <type>github</type>
+        <unverified>false</unverified>
+        <vendor display_value=""/>
+        <warranty_expiration/>
+        <webhook_url>https://&lt;DevOps integration user ID&gt;:&lt;integration user password&gt;@devopsdemo1.service-now.com/api/sn_devops/tool/event/c43ae879db272300588cf9361d9619eb</webhook_url>
+    </sn_devops_code_tool>
+    <sn_devops_execution_tool action="INSERT_OR_UPDATE">
+        <asset display_value=""/>
+        <asset_tag/>
+        <assigned/>
+        <assigned_to display_value=""/>
+        <assignment_group display_value=""/>
+        <attributes/>
+        <can_print>false</can_print>
+        <category/>
+        <change_control display_value=""/>
+        <checked_in/>
+        <checked_out/>
+        <comments/>
+        <company display_value=""/>
+        <connected_date>2019-02-11 07:54:47</connected_date>
+        <connection_alias display_value="sn_devops.Jenkins">cee835103b522300b200655593efc47c</connection_alias>
+        <connection_state>connected</connection_state>
+        <correlation_id/>
+        <cost/>
+        <cost_cc>USD</cost_cc>
+        <cost_center display_value=""/>
+        <delivery_date/>
+        <department display_value=""/>
+        <discovery_source/>
+        <dns_domain/>
+        <due/>
+        <due_in/>
+        <fault_count>0</fault_count>
+        <first_discovered/>
+        <fqdn/>
+        <gl_account/>
+        <install_date/>
+        <install_status>1</install_status>
+        <invoice_number/>
+        <ip_address/>
+        <justification/>
+        <last_discovered/>
+        <last_discovery>2019-02-11 07:55:10</last_discovery>
+        <lease_id/>
+        <location display_value=""/>
+        <mac_address/>
+        <maintenance_schedule display_value=""/>
+        <managed_by display_value=""/>
+        <manufacturer display_value=""/>
+        <model_id display_value=""/>
+        <model_number/>
+        <monitor>false</monitor>
+        <name>Jenkins</name>
+        <operational_status>1</operational_status>
+        <order_date/>
+        <owned_by display_value=""/>
+        <po_number/>
+        <purchase_date/>
+        <schedule display_value=""/>
+        <serial_number/>
+        <short_description/>
+        <skip_sync>false</skip_sync>
+        <start_date/>
+        <subcategory/>
+        <support_group display_value=""/>
+        <supported_by display_value=""/>
+        <sys_class_name>sn_devops_execution_tool</sys_class_name>
+        <sys_class_path>/!!/$#/!#</sys_class_path>
+        <sys_created_by>kit.corry</sys_created_by>
+        <sys_created_on>2019-02-11 07:53:19</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>4c0b28b9db272300588cf9361d9619f9</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2019-02-11 07:55:10</sys_updated_on>
+        <tool_url>http://jenkins-demo.sndevops.xyz</tool_url>
+        <type>jenkins</type>
+        <unverified>false</unverified>
+        <vendor display_value=""/>
+        <warranty_expiration/>
+        <webhook_url>https://&lt;DevOps integration user ID&gt;:&lt;integration user password&gt;@devopsdemo1.service-now.com/api/sn_devops/tool/event/4c0b28b9db272300588cf9361d9619f9</webhook_url>
+    </sn_devops_execution_tool>
+    <sn_devops_app action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <change_approval_group display_value="CorpSite Dev" name="CorpSite Dev">5b58a162dbeb630064ccd4f3ce96194b</change_approval_group>
+        <discovered/>
+        <external_created_date/>
+        <id>b5e0578bdbefa30064ccd4f3ce96192b</id>
+        <last_import>2019-02-19 16:26:17</last_import>
+        <name>CorpSite</name>
+        <native_id>CorpSite</native_id>
+        <pipeline display_value="Normal">224620f5db272300588cf9361d9619f6</pipeline>
+        <planning_tool display_value="Agile">c79fb6cbdbafa30064ccd4f3ce961921</planning_tool>
+        <previous_native_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-02-15 17:13:51</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>24b1db8bdbefa30064ccd4f3ce9619b6</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2019-02-19 16:26:17</sys_updated_on>
+        <tool_id/>
+        <url>https://devopsdemo1.service-now.com/cmdb_application_product_model.do?sys_id=b5e0578bdbefa30064ccd4f3ce96192b</url>
+    </sn_devops_app>
+    <sn_devops_app action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <change_approval_group display_value="CorpSite Dev" name="CorpSite Dev">5b58a162dbeb630064ccd4f3ce96194b</change_approval_group>
+        <discovered>2019-02-11 07:32:13</discovered>
+        <external_created_date/>
+        <id>10001</id>
+        <last_import>2019-02-11 07:40:58</last_import>
+        <name>CorpSite</name>
+        <native_id>COR</native_id>
+        <pipeline display_value="Normal">224620f5db272300588cf9361d9619f6</pipeline>
+        <planning_tool display_value="Jira">27a528b5db272300588cf9361d9619f5</planning_tool>
+        <previous_native_id/>
+        <sys_created_by>system</sys_created_by>
+        <sys_created_on>2019-02-11 07:32:13</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>69366c71db63230064ccd4f3ce9619f4</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_updated_by>devops.admin</sys_updated_by>
+        <sys_updated_on>2019-02-19 16:25:34</sys_updated_on>
+        <tool_id/>
+        <url>http://jira-demo.sndevops.xyz/projects/COR/summary</url>
+    </sn_devops_app>
+    <sn_devops_app_stage action="INSERT_OR_UPDATE">
+        <app display_value="CorpSite">24b1db8bdbefa30064ccd4f3ce9619b6</app>
+        <change_approval_group display_value=""/>
+        <change_control>false</change_control>
+        <configuration_item display_value=""/>
+        <name>CorpSite - CI</name>
+        <order>10</order>
+        <risk_threshold>50</risk_threshold>
+        <stage display_value="CI">1d76a0f5db272300588cf9361d96194f</stage>
+        <standard_change_template display_value=""/>
+        <sys_created_by>devops.admin</sys_created_by>
+        <sys_created_on>2019-02-19 15:51:42</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>00452758db7b670064ccd4f3ce96197c</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>devops.admin</sys_updated_by>
+        <sys_updated_on>2019-02-19 16:26:50</sys_updated_on>
+        <type>build_test</type>
+    </sn_devops_app_stage>
+    <sn_devops_app_stage action="INSERT_OR_UPDATE">
+        <app display_value="CorpSite">24b1db8bdbefa30064ccd4f3ce9619b6</app>
+        <change_approval_group display_value=""/>
+        <change_control>false</change_control>
+        <configuration_item display_value="CorpSite UAT">d988e839db272300588cf9361d9619ca</configuration_item>
+        <name>CorpSite - UAT</name>
+        <order>20</order>
+        <risk_threshold>50</risk_threshold>
+        <stage display_value="UAT">40a6e0f5db272300588cf9361d961902</stage>
+        <standard_change_template display_value="Std DevOps">87e7e039db272300588cf9361d961956</standard_change_template>
+        <sys_created_by>devops.admin</sys_created_by>
+        <sys_created_on>2019-02-19 15:51:42</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>08452758db7b670064ccd4f3ce96197c</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-02-19 20:52:27</sys_updated_on>
+        <type>deploy</type>
+    </sn_devops_app_stage>
+    <sn_devops_app_stage action="INSERT_OR_UPDATE">
+        <app display_value="CorpSite">24b1db8bdbefa30064ccd4f3ce9619b6</app>
+        <change_approval_group display_value=""/>
+        <change_control>false</change_control>
+        <configuration_item display_value="CorpSite UAT">d988e839db272300588cf9361d9619ca</configuration_item>
+        <name>CorpSite - UAT test</name>
+        <order>30</order>
+        <risk_threshold>50</risk_threshold>
+        <stage display_value="UAT">40a6e0f5db272300588cf9361d961902</stage>
+        <standard_change_template display_value=""/>
+        <sys_created_by>devops.admin</sys_created_by>
+        <sys_created_on>2019-02-19 16:24:21</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>43ac235cdb7b670064ccd4f3ce96197e</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>devops.admin</sys_updated_by>
+        <sys_updated_on>2019-02-19 16:26:57</sys_updated_on>
+        <type>test</type>
+    </sn_devops_app_stage>
+    <sn_devops_app_stage action="INSERT_OR_UPDATE">
+        <app display_value="CorpSite">24b1db8bdbefa30064ccd4f3ce9619b6</app>
+        <change_approval_group display_value=""/>
+        <change_control>false</change_control>
+        <configuration_item display_value="CorpSite PROD">94b8ac39db272300588cf9361d96192a</configuration_item>
+        <name>CorpSite - PROD</name>
+        <order>40</order>
+        <risk_threshold>50</risk_threshold>
+        <stage display_value="PROD">84d624f5db272300588cf9361d96196e</stage>
+        <standard_change_template display_value="Std DevOps">87e7e039db272300588cf9361d961956</standard_change_template>
+        <sys_created_by>devops.admin</sys_created_by>
+        <sys_created_on>2019-02-19 15:51:42</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>88452758db7b670064ccd4f3ce96197c</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-02-19 21:43:38</sys_updated_on>
+        <type>deploy</type>
+    </sn_devops_app_stage>
+    <sn_devops_app_stage action="INSERT_OR_UPDATE">
+        <app display_value="CorpSite">69366c71db63230064ccd4f3ce9619f4</app>
+        <change_approval_group display_value=""/>
+        <change_control>false</change_control>
+        <configuration_item display_value="CorpSite CI">dd78e839db272300588cf9361d961940</configuration_item>
+        <name>CorpSite (jira) - CI</name>
+        <order>10</order>
+        <risk_threshold>50</risk_threshold>
+        <stage display_value="CI">1d76a0f5db272300588cf9361d96194f</stage>
+        <standard_change_template display_value="Std DevOps">87e7e039db272300588cf9361d961956</standard_change_template>
+        <sys_created_by>kit.corry</sys_created_by>
+        <sys_created_on>2019-02-11 07:40:26</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>b918a439db272300588cf9361d96194a</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_updated_by>kit.corry</sys_updated_by>
+        <sys_updated_on>2019-02-11 07:44:02</sys_updated_on>
+        <type>build_test</type>
+    </sn_devops_app_stage>
+    <sn_devops_app_stage action="INSERT_OR_UPDATE">
+        <app display_value="CorpSite">69366c71db63230064ccd4f3ce9619f4</app>
+        <change_approval_group display_value=""/>
+        <change_control>true</change_control>
+        <configuration_item display_value="CorpSite UAT">d988e839db272300588cf9361d9619ca</configuration_item>
+        <name>CorpSite (jira) - UAT</name>
+        <order>20</order>
+        <risk_threshold>40</risk_threshold>
+        <stage display_value="UAT">40a6e0f5db272300588cf9361d961902</stage>
+        <standard_change_template display_value="Std DevOps">87e7e039db272300588cf9361d961956</standard_change_template>
+        <sys_created_by>kit.corry</sys_created_by>
+        <sys_created_on>2019-02-11 07:40:26</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>b118a439db272300588cf9361d96194b</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-02-11 20:19:14</sys_updated_on>
+        <type>deploy</type>
+    </sn_devops_app_stage>
+    <sn_devops_app_stage action="INSERT_OR_UPDATE">
+        <app display_value="CorpSite">69366c71db63230064ccd4f3ce9619f4</app>
+        <change_approval_group display_value=""/>
+        <change_control>false</change_control>
+        <configuration_item display_value="CorpSite UAT">d988e839db272300588cf9361d9619ca</configuration_item>
+        <name>CorpSite (jira) - UAT test</name>
+        <order>30</order>
+        <risk_threshold>50</risk_threshold>
+        <stage display_value="UAT">40a6e0f5db272300588cf9361d961902</stage>
+        <standard_change_template display_value="Std DevOps">87e7e039db272300588cf9361d961956</standard_change_template>
+        <sys_created_by>kit.corry</sys_created_by>
+        <sys_created_on>2019-02-11 07:44:55</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>65f86079db272300588cf9361d96194c</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-02-11 09:32:57</sys_updated_on>
+        <type>test</type>
+    </sn_devops_app_stage>
+    <sn_devops_app_stage action="INSERT_OR_UPDATE">
+        <app display_value="CorpSite">69366c71db63230064ccd4f3ce9619f4</app>
+        <change_approval_group display_value=""/>
+        <change_control>false</change_control>
+        <configuration_item display_value="CorpSite PROD">94b8ac39db272300588cf9361d96192a</configuration_item>
+        <name>CorpSite (jira) - PROD</name>
+        <order>40</order>
+        <risk_threshold>50</risk_threshold>
+        <stage display_value="PROD">84d624f5db272300588cf9361d96196e</stage>
+        <standard_change_template display_value="Std DevOps">87e7e039db272300588cf9361d961956</standard_change_template>
+        <sys_created_by>kit.corry</sys_created_by>
+        <sys_created_on>2019-02-11 07:40:26</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>3518a439db272300588cf9361d96194b</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_updated_by>kit.corry</sys_updated_by>
+        <sys_updated_on>2019-02-11 07:44:12</sys_updated_on>
+        <type>deploy</type>
+    </sn_devops_app_stage>
+    <sn_devops_job action="INSERT_OR_UPDATE">
+        <app_stage display_value="CorpSite - CI">00452758db7b670064ccd4f3ce96197c</app_stage>
+        <discovered>2019-02-11 07:55:10</discovered>
+        <execution_tool display_value="Jenkins">4c0b28b9db272300588cf9361d9619f9</execution_tool>
+        <external_created_date/>
+        <job_url>http://jenkins-demo.sndevops.xyz/job/CorpSite%20CI/</job_url>
+        <last_import/>
+        <name>CorpSite CI</name>
+        <native_id>CorpSite CI</native_id>
+        <score/>
+        <sys_created_by>system</sys_created_by>
+        <sys_created_on>2019-02-11 07:55:10</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>b17b6835db63230064ccd4f3ce961962</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>devops.admin</sys_updated_by>
+        <sys_updated_on>2019-02-19 16:27:44</sys_updated_on>
+    </sn_devops_job>
+    <sn_devops_job action="INSERT_OR_UPDATE">
+        <app_stage display_value="CorpSite - UAT">08452758db7b670064ccd4f3ce96197c</app_stage>
+        <discovered>2019-02-11 07:55:10</discovered>
+        <execution_tool display_value="Jenkins">4c0b28b9db272300588cf9361d9619f9</execution_tool>
+        <external_created_date/>
+        <job_url>http://jenkins-demo.sndevops.xyz/job/CorpSite%20UAT%20deploy/</job_url>
+        <last_import/>
+        <name>CorpSite UAT deploy</name>
+        <native_id>CorpSite UAT deploy</native_id>
+        <score/>
+        <sys_created_by>system</sys_created_by>
+        <sys_created_on>2019-02-11 07:55:10</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>717b6835db63230064ccd4f3ce961963</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>devops.admin</sys_updated_by>
+        <sys_updated_on>2019-02-19 16:27:51</sys_updated_on>
+    </sn_devops_job>
+    <sn_devops_job action="INSERT_OR_UPDATE">
+        <app_stage display_value="CorpSite - UAT test">43ac235cdb7b670064ccd4f3ce96197e</app_stage>
+        <discovered>2019-02-11 07:55:10</discovered>
+        <execution_tool display_value="Jenkins">4c0b28b9db272300588cf9361d9619f9</execution_tool>
+        <external_created_date/>
+        <job_url>http://jenkins-demo.sndevops.xyz/job/CorpSite%20UAT%20test/</job_url>
+        <last_import/>
+        <name>CorpSite UAT test</name>
+        <native_id>CorpSite UAT test</native_id>
+        <score/>
+        <sys_created_by>system</sys_created_by>
+        <sys_created_on>2019-02-11 07:55:10</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>357b6835db63230064ccd4f3ce961963</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>devops.admin</sys_updated_by>
+        <sys_updated_on>2019-02-19 16:27:57</sys_updated_on>
+    </sn_devops_job>
+    <sn_devops_job action="INSERT_OR_UPDATE">
+        <app_stage display_value="CorpSite - PROD">88452758db7b670064ccd4f3ce96197c</app_stage>
+        <discovered>2019-02-11 07:55:10</discovered>
+        <execution_tool display_value="Jenkins">4c0b28b9db272300588cf9361d9619f9</execution_tool>
+        <external_created_date/>
+        <job_url>http://jenkins-demo.sndevops.xyz/job/CorpSite-PROD-deploy/</job_url>
+        <last_import/>
+        <name>CorpSite-PROD-deploy</name>
+        <native_id>CorpSite-PROD-deploy</native_id>
+        <score/>
+        <sys_created_by>system</sys_created_by>
+        <sys_created_on>2019-02-11 07:55:10</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>f57b6835db63230064ccd4f3ce961963</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>devops.admin</sys_updated_by>
+        <sys_updated_on>2019-02-19 16:28:05</sys_updated_on>
+    </sn_devops_job>
 </unload>
