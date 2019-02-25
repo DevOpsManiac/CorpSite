@@ -1,0 +1,165 @@
+<!--
+DevOps demo data
+version: 2/19/2019
+
+
+1. ensure the instance has change management and performance analytics
+2. activate the Agile 2.0 plugin
+3. install the DevOps app
+4. submit the std change template for approval
+5. approve the std change as DevOps.admin
+
+
+-->
+<unload unload_date="2019-02-19 23:26:48">
+    <sys_user_has_role action="INSERT_OR_UPDATE">
+        <granted_by display_value="">not-applicable</granted_by>
+        <included_in_role display_value=""/>
+        <included_in_role_instance display_value=""/>
+        <inh_count>1</inh_count>
+        <inh_map>cdbd68059f0002003d5c77a0942e70ec</inh_map>
+        <inherited>true</inherited>
+        <role display_value="sn_devops.user" name="sn_devops.user">4bc2437887302300f97abba826cb0bc0</role>
+        <state>active</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-02-13 20:15:29</sys_created_on>
+        <sys_id>e9186d22dbeb630064ccd4f3ce961912</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-02-13 20:15:29</sys_updated_on>
+        <user display_value="DevOps Admin">f0f7e922dbeb630064ccd4f3ce9619e9</user>
+    </sys_user_has_role>
+    <sys_user_has_role action="INSERT_OR_UPDATE">
+        <granted_by display_value="">not-applicable</granted_by>
+        <included_in_role display_value=""/>
+        <included_in_role_instance display_value=""/>
+        <inh_count/>
+        <inh_map/>
+        <inherited>false</inherited>
+        <role display_value="sn_devops.admin" name="sn_devops.admin">e582037887302300f97abba826cb0b48</role>
+        <state>active</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-02-13 20:15:29</sys_created_on>
+        <sys_id>25182d22dbeb630064ccd4f3ce9619bf</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-02-13 20:15:29</sys_updated_on>
+        <user display_value="DevOps Admin">f0f7e922dbeb630064ccd4f3ce9619e9</user>
+    </sys_user_has_role>
+    <sys_user_has_role action="INSERT_OR_UPDATE">
+        <granted_by display_value="">not-applicable</granted_by>
+        <included_in_role display_value=""/>
+        <included_in_role_instance display_value=""/>
+        <inh_count/>
+        <inh_map/>
+        <inherited>false</inherited>
+        <role display_value="sn_devops.user" name="sn_devops.user">4bc2437887302300f97abba826cb0bc0</role>
+        <state>active</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-02-13 20:16:06</sys_created_on>
+        <sys_id>26386d22dbeb630064ccd4f3ce961957</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-02-13 20:16:06</sys_updated_on>
+        <user display_value="Kit Corry">c7186d22dbeb630064ccd4f3ce9619b2</user>
+    </sys_user_has_role>
+    <sn_devops_app action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <change_approval_group display_value="CorpSite Dev" name="CorpSite Dev">5b58a162dbeb630064ccd4f3ce96194b</change_approval_group>
+        <discovered/>
+        <external_created_date/>
+        <id>b5e0578bdbefa30064ccd4f3ce96192b</id>
+        <last_import>2019-02-19 16:26:17</last_import>
+        <name>CorpSite</name>
+        <native_id>CorpSite</native_id>
+        <pipeline display_value="Normal">224620f5db272300588cf9361d9619f6</pipeline>
+        <planning_tool></planning_tool>
+        <previous_native_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-02-15 17:13:51</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>24b1db8bdbefa30064ccd4f3ce9619b6</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2019-02-19 16:26:17</sys_updated_on>
+        <tool_id/>
+        <url>https://devopsdemo.service-now.com/cmdb_application_product_model.do?sys_id=b5e0578bdbefa30064ccd4f3ce96192b</url>
+    </sn_devops_app>
+    <sn_devops_app_stage action="INSERT_OR_UPDATE">
+        <app display_value="CorpSite">24b1db8bdbefa30064ccd4f3ce9619b6</app>
+        <change_approval_group display_value=""/>
+        <change_control>false</change_control>
+        <configuration_item display_value=""/>
+        <name>CorpSite - CI</name>
+        <order>10</order>
+        <risk_threshold>50</risk_threshold>
+        <stage display_value="CI">1d76a0f5db272300588cf9361d96194f</stage>
+        <standard_change_template display_value=""/>
+        <sys_created_by>devops.admin</sys_created_by>
+        <sys_created_on>2019-02-19 15:51:42</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>00452758db7b670064ccd4f3ce96197c</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>devops.admin</sys_updated_by>
+        <sys_updated_on>2019-02-19 16:26:50</sys_updated_on>
+        <type>build_test</type>
+    </sn_devops_app_stage>
+    <sn_devops_app_stage action="INSERT_OR_UPDATE">
+        <app display_value="CorpSite">24b1db8bdbefa30064ccd4f3ce9619b6</app>
+        <change_approval_group display_value=""/>
+        <change_control>false</change_control>
+        <configuration_item display_value="CorpSite UAT">d988e839db272300588cf9361d9619ca</configuration_item>
+        <name>CorpSite - UAT</name>
+        <order>20</order>
+        <risk_threshold>50</risk_threshold>
+        <stage display_value="UAT">40a6e0f5db272300588cf9361d961902</stage>
+        <standard_change_template display_value="Std DevOps">87e7e039db272300588cf9361d961956</standard_change_template>
+        <sys_created_by>devops.admin</sys_created_by>
+        <sys_created_on>2019-02-19 15:51:42</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>08452758db7b670064ccd4f3ce96197c</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-02-19 20:52:27</sys_updated_on>
+        <type>deploy</type>
+    </sn_devops_app_stage>
+    <sn_devops_app_stage action="INSERT_OR_UPDATE">
+        <app display_value="CorpSite">24b1db8bdbefa30064ccd4f3ce9619b6</app>
+        <change_approval_group display_value=""/>
+        <change_control>false</change_control>
+        <configuration_item display_value="CorpSite UAT">d988e839db272300588cf9361d9619ca</configuration_item>
+        <name>CorpSite - UAT test</name>
+        <order>30</order>
+        <risk_threshold>50</risk_threshold>
+        <stage display_value="UAT">40a6e0f5db272300588cf9361d961902</stage>
+        <standard_change_template display_value=""/>
+        <sys_created_by>devops.admin</sys_created_by>
+        <sys_created_on>2019-02-19 16:24:21</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>43ac235cdb7b670064ccd4f3ce96197e</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>devops.admin</sys_updated_by>
+        <sys_updated_on>2019-02-19 16:26:57</sys_updated_on>
+        <type>test</type>
+    </sn_devops_app_stage>
+    <sn_devops_app_stage action="INSERT_OR_UPDATE">
+        <app display_value="CorpSite">24b1db8bdbefa30064ccd4f3ce9619b6</app>
+        <change_approval_group display_value=""/>
+        <change_control>false</change_control>
+        <configuration_item display_value="CorpSite PROD">94b8ac39db272300588cf9361d96192a</configuration_item>
+        <name>CorpSite - PROD</name>
+        <order>40</order>
+        <risk_threshold>50</risk_threshold>
+        <stage display_value="PROD">84d624f5db272300588cf9361d96196e</stage>
+        <standard_change_template display_value="Std DevOps">87e7e039db272300588cf9361d961956</standard_change_template>
+        <sys_created_by>devops.admin</sys_created_by>
+        <sys_created_on>2019-02-19 15:51:42</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>88452758db7b670064ccd4f3ce96197c</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-02-19 21:43:38</sys_updated_on>
+        <type>deploy</type>
+    </sn_devops_app_stage>
+</unload>
