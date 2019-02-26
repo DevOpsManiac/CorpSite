@@ -434,7 +434,6 @@ version: 2/19/2019
         <sys_updated_on>2019-02-13 20:15:29</sys_updated_on>
         <user display_value="DevOps Admin">f0f7e922dbeb630064ccd4f3ce9619e9</user>
     </sys_user_has_role>
-    
     <sys_user_has_role action="INSERT_OR_UPDATE">
         <granted_by display_value="">not-applicable</granted_by>
         <included_in_role display_value=""/>
@@ -622,7 +621,6 @@ version: 2/19/2019
         <sys_updated_on>2019-02-13 20:15:29</sys_updated_on>
         <user display_value="DevOps Admin">f0f7e922dbeb630064ccd4f3ce9619e9</user>
     </sys_user_has_role>
-
     <sys_user action="INSERT_OR_UPDATE">
         <active>true</active>
         <building display_value="" />
@@ -684,6 +682,23 @@ version: 2/19/2019
         <web_service_access_only>false</web_service_access_only>
         <zip />
     </sys_user>
+    <sys_user_has_role action="INSERT_OR_UPDATE">
+        <granted_by display_value="">not-applicable</granted_by>
+        <included_in_role display_value=""/>
+        <included_in_role_instance display_value=""/>
+        <inh_count/>
+        <inh_map/>
+        <inherited>false</inherited>
+        <role display_value="scrum_team_member" name="scrum_team_member">6aab2741efa31000a7450fa3f82256be</role>
+        <state>active</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-02-26 13:57:34</sys_created_on>
+        <sys_id>244e4feadbfb2300588cf9361d961988</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-02-26 13:57:34</sys_updated_on>
+        <user display_value="Kit Corry">c7186d22dbeb630064ccd4f3ce9619b2</user>
+    </sys_user_has_role>
     <sys_user_has_role action="INSERT_OR_UPDATE">
         <granted_by display_value="">not-applicable</granted_by>
         <included_in_role display_value=""/>
@@ -769,7 +784,6 @@ version: 2/19/2019
         <sys_updated_on>2019-02-13 20:16:06</sys_updated_on>
         <user display_value="Kit Corry">c7186d22dbeb630064ccd4f3ce9619b2</user>
     </sys_user_has_role>
-    
     <sys_user_has_role action="INSERT_OR_UPDATE">
         <granted_by display_value="">not-applicable</granted_by>
         <included_in_role display_value=""/>
@@ -879,9 +893,6 @@ version: 2/19/2019
         <sys_updated_on>2019-02-20 18:08:43</sys_updated_on>
         <user display_value="DevOps Admin">f0f7e922dbeb630064ccd4f3ce9619e9</user>
     </sys_user_grmember>
-    <!-- 
-Add DevOps Admin to the change management group so they can approve the std change template
--->
     <sys_user_grmember action="INSERT_OR_UPDATE">
         <group display_value="Change Management" name="Change Management">a715cd759f2002002920bde8132e7018</group>
         <points>0</points>
@@ -894,9 +905,6 @@ Add DevOps Admin to the change management group so they can approve the std chan
         <sys_updated_on>2019-02-20 18:14:24</sys_updated_on>
         <user display_value="DevOps Admin">f0f7e922dbeb630064ccd4f3ce9619e9</user>
     </sys_user_grmember>
-    <!-- 
-Create standard change proposal.  
--->
     <std_change_proposal action="INSERT_OR_UPDATE">
         <active>true</active>
         <activity_due />
@@ -1027,190 +1035,187 @@ Describe the tests that will be carried out after implementation to confirm
         <weight />
     </cmdb_application_product_model>
     <m2m_product_group action="INSERT_OR_UPDATE">
-<group display_value="CorpSite Dev" name="CorpSite Dev">5b58a162dbeb630064ccd4f3ce96194b</group>
-<product display_value="CorpSite">b5e0578bdbefa30064ccd4f3ce96192b</product>
-<sys_class_name>m2m_product_group</sys_class_name>
-<sys_created_by>admin</sys_created_by>
-<sys_created_on>2019-02-25 17:31:22</sys_created_on>
-<sys_domain>global</sys_domain>
-<sys_id>2a957ed6db73a30054c2f1471d961992</sys_id>
-<sys_mod_count>0</sys_mod_count>
-<sys_updated_by>admin</sys_updated_by>
-<sys_updated_on>2019-02-25 17:31:22</sys_updated_on>
-</m2m_product_group>
-    
-<cmdb_ci_app_server_java action="INSERT_OR_UPDATE">
-<asset display_value=""/>
-<asset_tag/>
-<assigned/>
-<assigned_to display_value=""/>
-<assignment_group display_value=""/>
-<attributes/>
-<can_print>false</can_print>
-<category>Resource</category>
-<change_control display_value=""/>
-<checked_in/>
-<checked_out/>
-<comments/>
-<company display_value=""/>
-<config_directory/>
-<config_file/>
-<container/>
-<correlation_id/>
-<cost/>
-<cost_cc>USD</cost_cc>
-<cost_center display_value=""/>
-<delivery_date/>
-<department display_value=""/>
-<discovery_source/>
-<dns_domain/>
-<due/>
-<due_in/>
-<edition/>
-<fault_count>0</fault_count>
-<first_discovered/>
-<fqdn/>
-<gl_account/>
-<install_date/>
-<install_directory/>
-<install_status>1</install_status>
-<invoice_number/>
-<ip_address/>
-<is_clustered>false</is_clustered>
-<justification/>
-<last_discovered/>
-<lease_id/>
-<location display_value=""/>
-<mac_address/>
-<maintenance_schedule display_value=""/>
-<managed_by display_value=""/>
-<manufacturer display_value=""/>
-<model_id display_value="">e9494387dbefa30064ccd4f3ce961904</model_id>
-<model_number/>
-<monitor>false</monitor>
-<name>CorpSite Prod Server</name>
-<operational_status>1</operational_status>
-<order_date/>
-<owned_by display_value=""/>
-<pid/>
-<po_number/>
-<purchase_date/>
-<rp_command_hash/>
-<rp_key_parameters_hash/>
-<running_process_command/>
-<running_process_key_parameters/>
-<schedule display_value=""/>
-<serial_number/>
-<short_description/>
-<skip_sync>false</skip_sync>
-<start_date/>
-<subcategory>Application</subcategory>
-<support_group display_value=""/>
-<supported_by display_value=""/>
-<sys_class_name>cmdb_ci_app_server_java</sys_class_name>
-<sys_class_path>/!!/!(/!)/!2</sys_class_path>
-<sys_created_by>admin</sys_created_by>
-<sys_created_on>2019-02-25 17:26:56</sys_created_on>
-<sys_domain>global</sys_domain>
-<sys_domain_path>/</sys_domain_path>
-<sys_id>e994b2d6db73a30054c2f1471d961914</sys_id>
-<sys_mod_count>1</sys_mod_count>
-<sys_updated_by>admin</sys_updated_by>
-<sys_updated_on>2019-02-25 17:27:03</sys_updated_on>
-<tcp_port/>
-<unverified>false</unverified>
-<used_for>Production</used_for>
-<vendor display_value=""/>
-<version/>
-<warranty_expiration/>
-</cmdb_ci_app_server_java>
-<cmdb_ci_app_server_java action="INSERT_OR_UPDATE">
-<asset display_value=""/>
-<asset_tag/>
-<assigned/>
-<assigned_to display_value=""/>
-<assignment_group display_value=""/>
-<attributes/>
-<can_print>false</can_print>
-<category>Resource</category>
-<change_control display_value=""/>
-<checked_in/>
-<checked_out/>
-<comments/>
-<company display_value=""/>
-<config_directory/>
-<config_file/>
-<container/>
-<correlation_id/>
-<cost/>
-<cost_cc>USD</cost_cc>
-<cost_center display_value=""/>
-<delivery_date/>
-<department display_value=""/>
-<discovery_source/>
-<dns_domain/>
-<due/>
-<due_in/>
-<edition/>
-<fault_count>0</fault_count>
-<first_discovered/>
-<fqdn/>
-<gl_account/>
-<install_date/>
-<install_directory/>
-<install_status>1</install_status>
-<invoice_number/>
-<ip_address/>
-<is_clustered>false</is_clustered>
-<justification/>
-<last_discovered/>
-<lease_id/>
-<location display_value=""/>
-<mac_address/>
-<maintenance_schedule display_value=""/>
-<managed_by display_value=""/>
-<manufacturer display_value=""/>
-<model_id display_value="">e9494387dbefa30064ccd4f3ce961904</model_id>
-<model_number/>
-<monitor>false</monitor>
-<name>CorpSite UAT Server</name>
-<operational_status>1</operational_status>
-<order_date/>
-<owned_by display_value=""/>
-<pid/>
-<po_number/>
-<purchase_date/>
-<rp_command_hash/>
-<rp_key_parameters_hash/>
-<running_process_command/>
-<running_process_key_parameters/>
-<schedule display_value=""/>
-<serial_number/>
-<short_description/>
-<skip_sync>false</skip_sync>
-<start_date/>
-<subcategory>Application</subcategory>
-<support_group display_value=""/>
-<supported_by display_value=""/>
-<sys_class_name>cmdb_ci_app_server_java</sys_class_name>
-<sys_class_path>/!!/!(/!)/!2</sys_class_path>
-<sys_created_by>admin</sys_created_by>
-<sys_created_on>2019-02-15 16:37:03</sys_created_on>
-<sys_domain>global</sys_domain>
-<sys_domain_path>/</sys_domain_path>
-<sys_id>8c498387dbefa30064ccd4f3ce961946</sys_id>
-<sys_mod_count>1</sys_mod_count>
-<sys_updated_by>admin</sys_updated_by>
-<sys_updated_on>2019-02-25 17:26:33</sys_updated_on>
-<tcp_port/>
-<unverified>false</unverified>
-<used_for>Production</used_for>
-<vendor display_value=""/>
-<version/>
-<warranty_expiration/>
-</cmdb_ci_app_server_java>
-
-
+        <group display_value="CorpSite Dev" name="CorpSite Dev">5b58a162dbeb630064ccd4f3ce96194b</group>
+        <product display_value="CorpSite">b5e0578bdbefa30064ccd4f3ce96192b</product>
+        <sys_class_name>m2m_product_group</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-02-25 17:31:22</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>2a957ed6db73a30054c2f1471d961992</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-02-25 17:31:22</sys_updated_on>
+    </m2m_product_group>
+    <cmdb_ci_app_server_java action="INSERT_OR_UPDATE">
+        <asset display_value=""/>
+        <asset_tag/>
+        <assigned/>
+        <assigned_to display_value=""/>
+        <assignment_group display_value=""/>
+        <attributes/>
+        <can_print>false</can_print>
+        <category>Resource</category>
+        <change_control display_value=""/>
+        <checked_in/>
+        <checked_out/>
+        <comments/>
+        <company display_value=""/>
+        <config_directory/>
+        <config_file/>
+        <container/>
+        <correlation_id/>
+        <cost/>
+        <cost_cc>USD</cost_cc>
+        <cost_center display_value=""/>
+        <delivery_date/>
+        <department display_value=""/>
+        <discovery_source/>
+        <dns_domain/>
+        <due/>
+        <due_in/>
+        <edition/>
+        <fault_count>0</fault_count>
+        <first_discovered/>
+        <fqdn/>
+        <gl_account/>
+        <install_date/>
+        <install_directory/>
+        <install_status>1</install_status>
+        <invoice_number/>
+        <ip_address/>
+        <is_clustered>false</is_clustered>
+        <justification/>
+        <last_discovered/>
+        <lease_id/>
+        <location display_value=""/>
+        <mac_address/>
+        <maintenance_schedule display_value=""/>
+        <managed_by display_value=""/>
+        <manufacturer display_value=""/>
+        <model_id display_value="">e9494387dbefa30064ccd4f3ce961904</model_id>
+        <model_number/>
+        <monitor>false</monitor>
+        <name>CorpSite Prod Server</name>
+        <operational_status>1</operational_status>
+        <order_date/>
+        <owned_by display_value=""/>
+        <pid/>
+        <po_number/>
+        <purchase_date/>
+        <rp_command_hash/>
+        <rp_key_parameters_hash/>
+        <running_process_command/>
+        <running_process_key_parameters/>
+        <schedule display_value=""/>
+        <serial_number/>
+        <short_description/>
+        <skip_sync>false</skip_sync>
+        <start_date/>
+        <subcategory>Application</subcategory>
+        <support_group display_value=""/>
+        <supported_by display_value=""/>
+        <sys_class_name>cmdb_ci_app_server_java</sys_class_name>
+        <sys_class_path>/!!/!(/!)/!2</sys_class_path>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-02-25 17:26:56</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>e994b2d6db73a30054c2f1471d961914</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-02-25 17:27:03</sys_updated_on>
+        <tcp_port/>
+        <unverified>false</unverified>
+        <used_for>Production</used_for>
+        <vendor display_value=""/>
+        <version/>
+        <warranty_expiration/>
+    </cmdb_ci_app_server_java>
+    <cmdb_ci_app_server_java action="INSERT_OR_UPDATE">
+        <asset display_value=""/>
+        <asset_tag/>
+        <assigned/>
+        <assigned_to display_value=""/>
+        <assignment_group display_value=""/>
+        <attributes/>
+        <can_print>false</can_print>
+        <category>Resource</category>
+        <change_control display_value=""/>
+        <checked_in/>
+        <checked_out/>
+        <comments/>
+        <company display_value=""/>
+        <config_directory/>
+        <config_file/>
+        <container/>
+        <correlation_id/>
+        <cost/>
+        <cost_cc>USD</cost_cc>
+        <cost_center display_value=""/>
+        <delivery_date/>
+        <department display_value=""/>
+        <discovery_source/>
+        <dns_domain/>
+        <due/>
+        <due_in/>
+        <edition/>
+        <fault_count>0</fault_count>
+        <first_discovered/>
+        <fqdn/>
+        <gl_account/>
+        <install_date/>
+        <install_directory/>
+        <install_status>1</install_status>
+        <invoice_number/>
+        <ip_address/>
+        <is_clustered>false</is_clustered>
+        <justification/>
+        <last_discovered/>
+        <lease_id/>
+        <location display_value=""/>
+        <mac_address/>
+        <maintenance_schedule display_value=""/>
+        <managed_by display_value=""/>
+        <manufacturer display_value=""/>
+        <model_id display_value="">e9494387dbefa30064ccd4f3ce961904</model_id>
+        <model_number/>
+        <monitor>false</monitor>
+        <name>CorpSite UAT Server</name>
+        <operational_status>1</operational_status>
+        <order_date/>
+        <owned_by display_value=""/>
+        <pid/>
+        <po_number/>
+        <purchase_date/>
+        <rp_command_hash/>
+        <rp_key_parameters_hash/>
+        <running_process_command/>
+        <running_process_key_parameters/>
+        <schedule display_value=""/>
+        <serial_number/>
+        <short_description/>
+        <skip_sync>false</skip_sync>
+        <start_date/>
+        <subcategory>Application</subcategory>
+        <support_group display_value=""/>
+        <supported_by display_value=""/>
+        <sys_class_name>cmdb_ci_app_server_java</sys_class_name>
+        <sys_class_path>/!!/!(/!)/!2</sys_class_path>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-02-15 16:37:03</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>8c498387dbefa30064ccd4f3ce961946</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-02-25 17:26:33</sys_updated_on>
+        <tcp_port/>
+        <unverified>false</unverified>
+        <used_for>Production</used_for>
+        <vendor display_value=""/>
+        <version/>
+        <warranty_expiration/>
+    </cmdb_ci_app_server_java>
     <cmdb_ci_service_discovered action="INSERT_OR_UPDATE">
         <asset display_value="" />
         <asset_tag />
@@ -1769,6 +1774,7 @@ Describe the tests that will be carried out after implementation to confirm
     <backlog_definition action="INSERT_OR_UPDATE">
         <filter table="rm_story">sys_class_name=rm_story^active=true^sprintISEMPTY^assignment_group=5b58a162dbeb630064ccd4f3ce96194b^EQ
             
+            
             <item goto="false" or="false" field="sys_class_name" endquery="false" value="rm_story" operator="=" newquery="false"/>
             <item goto="false" or="false" field="active" endquery="false" value="true" operator="=" newquery="false"/>
             <item goto="false" or="false" field="sprint" endquery="false" value="" operator="ISEMPTY" newquery="false"/>
@@ -2022,4 +2028,55 @@ Describe the tests that will be carried out after implementation to confirm
         <url_builder>false</url_builder>
         <use_mid>false</use_mid>
     </http_connection>
+    <sys_user_has_role action="INSERT_OR_UPDATE">
+        <granted_by display_value="">not-applicable</granted_by>
+        <included_in_role display_value=""/>
+        <included_in_role_instance display_value=""/>
+        <inh_count>1</inh_count>
+        <inh_map>cdbd68059f0002003d5c77a0942e70ec</inh_map>
+        <inherited>true</inherited>
+        <role display_value="sn_devops.user" name="sn_devops.user">4bc2437887302300f97abba826cb0bc0</role>
+        <state>active</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-02-13 20:15:29</sys_created_on>
+        <sys_id>e9186d22dbeb630064ccd4f3ce961912</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-02-13 20:15:29</sys_updated_on>
+        <user display_value="DevOps Admin">f0f7e922dbeb630064ccd4f3ce9619e9</user>
+    </sys_user_has_role>
+    <sys_user_has_role action="INSERT_OR_UPDATE">
+        <granted_by display_value="">not-applicable</granted_by>
+        <included_in_role display_value=""/>
+        <included_in_role_instance display_value=""/>
+        <inh_count/>
+        <inh_map/>
+        <inherited>false</inherited>
+        <role display_value="sn_devops.admin" name="sn_devops.admin">e582037887302300f97abba826cb0b48</role>
+        <state>active</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-02-13 20:15:29</sys_created_on>
+        <sys_id>25182d22dbeb630064ccd4f3ce9619bf</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-02-13 20:15:29</sys_updated_on>
+        <user display_value="DevOps Admin">f0f7e922dbeb630064ccd4f3ce9619e9</user>
+    </sys_user_has_role>
+    <sys_user_has_role action="INSERT_OR_UPDATE">
+        <granted_by display_value="">not-applicable</granted_by>
+        <included_in_role display_value=""/>
+        <included_in_role_instance display_value=""/>
+        <inh_count/>
+        <inh_map/>
+        <inherited>false</inherited>
+        <role display_value="sn_devops.user" name="sn_devops.user">4bc2437887302300f97abba826cb0bc0</role>
+        <state>active</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-02-13 20:16:06</sys_created_on>
+        <sys_id>26386d22dbeb630064ccd4f3ce961957</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-02-13 20:16:06</sys_updated_on>
+        <user display_value="Kit Corry">c7186d22dbeb630064ccd4f3ce9619b2</user>
+    </sys_user_has_role>
 </unload>
