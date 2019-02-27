@@ -5,6 +5,7 @@ import org.springframework.web.servlet.support.AbstractAnnotationConfigDispatche
 
 public class WebInitializer extends AbstractAnnotationConfigDispatcherServletInitializer {
 
+    // Need to force a commit
     @Override
     protected Class<?>[] getRootConfigClasses() {
         return null;
