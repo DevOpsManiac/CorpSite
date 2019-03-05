@@ -9,7 +9,7 @@
     <packaging>war</packaging>
     <version>1.0-SNAPSHOT</version>
     <name>globex-web</name>
-    <url>http://maven.apache.org</url>
+    <url>http://maven.apache.org</url
 
     <properties>
         <!-- https://maven.apache.org/general.html#encoding-warning -->
