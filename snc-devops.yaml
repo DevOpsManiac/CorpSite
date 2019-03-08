@@ -1,0 +1,30 @@
+app: CorpSite
+  - pipeline: normal
+  app-stage:
+    - name: CorpSite - CI
+    - pipeline-stage: CI
+    - type: Build and Test
+    - order: 10
+    - change-control: false
+    - jenkins-job: http://jenkins-demo.sndevops.xyz/job/CorpSite%20CI/
+
+  app-stage:
+    - name: CorpSite - UAT deploy
+    - pipeline-stage: UAT
+    - type: Deploy
+    - order: 20
+    - jenkins-job: http://jenkins-demo.sndevops.xyz/job/CorpSite%20UAT%20deploy/
+
+  app-stage:
+    - name: CorpSite - UAT test
+    - pipeline-stage: UAT
+    - type: Test
+    - order: 30
+    - jenkins-job: http://jenkins-demo.sndevops.xyz/job/CorpSite%20UAT%20test/
+
+  app-stage:
+    - name: CorpSite - PROD
+    - pipeline-stage: PROD
+    - type: Deploy
+    - order: 40
+    - jenkins-job: http://jenkins-demo.sndevops.xyz/job/CorpSite-PROD-deploy/
