@@ -2079,4 +2079,238 @@ Describe the tests that will be carried out after implementation to confirm
         <sys_updated_on>2019-02-13 20:16:06</sys_updated_on>
         <user display_value="Kit Corry">c7186d22dbeb630064ccd4f3ce9619b2</user>
     </sys_user_has_role>
+
+
+    <chg_approval_def action="INSERT_OR_UPDATE">
+        <approval_action>approve</approval_action>
+        <approver_source>change_request</approver_source>
+        <group display_value="" />
+        <group_field />
+        <mandatory>false</mandatory>
+        <name>DevOps Auto Approval</name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-04-01 16:16:48</sys_created_on>
+        <sys_id>d414322ddbacb30036549875db9619f7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-04-01 16:16:48</sys_updated_on>
+        <table>change_request</table>
+        <user display_value="" />
+        <user_field>assignment_group.manager</user_field>
+        <wait_for>first</wait_for>
+    </chg_approval_def>
+
+    <chg_policy_approval action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <active>true</active>
+        <answer_table>chg_approval_def</answer_table>
+        <answer_type>reference</answer_type>
+        <label />
+        <name>DevOps Approval Policy</name>
+        <reference_qualifier table="chg_approval_def" />
+        <sys_class_name>chg_policy_approval</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-04-01 16:04:18</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>fd4136a9dbacb30036549875db961983</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>DevOps Approval Policy</sys_name>
+        <sys_overrides display_value="" />
+        <sys_package display_value="Global" source="global">global</sys_package>
+        <sys_policy />
+        <sys_scope display_value="Global">global</sys_scope>
+        <sys_update_name>chg_policy_approval_fd4136a9dbacb30036549875db961983</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-04-01 16:04:18</sys_updated_on>
+    </chg_policy_approval>
+
+    <sys_decision_input action="INSERT_OR_UPDATE">
+		<active>true</active>
+		<array>false</array>
+		<array_denormalized>false</array_denormalized>
+		<attributes>element_mapping_provider=com.glide.decision_table.data.DecisionTableVariableMapper</attributes>
+		<audit>false</audit>
+		<calculation>
+			<![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]>
+		</calculation>
+		<choice />
+		<choice_field />
+		<choice_table />
+		<column_label>Change request</column_label>
+		<comments />
+		<create_roles />
+		<default_value />
+		<defaultsort />
+		<delete_roles />
+		<dependent />
+		<dependent_on_field />
+		<display>false</display>
+		<dynamic_creation>false</dynamic_creation>
+		<dynamic_creation_script />
+		<dynamic_default_value display_value="" />
+		<dynamic_ref_qual display_value="" />
+		<element>change_request</element>
+		<element_reference>false</element_reference>
+		<foreign_database />
+		<function_definition />
+		<function_field>false</function_field>
+		<help />
+		<hint />
+		<internal_type display_value="Reference">reference</internal_type>
+		<label>Change request</label>
+		<mandatory>false</mandatory>
+		<max_length>32</max_length>
+		<model display_value="DevOps Approval Policy">fd4136a9dbacb30036549875db961983</model>
+		<model_id>fd4136a9dbacb30036549875db961983</model_id>
+		<model_table>sys_decision</model_table>
+		<name>var__m_sys_decision_input_fd4136a9dbacb30036549875db961983</name>
+		<next_element />
+		<order>100</order>
+		<primary>false</primary>
+		<read_only>false</read_only>
+		<read_roles />
+		<reference display_value="Change Request" name="change_request">change_request</reference>
+		<reference_cascade_rule />
+		<reference_floats>false</reference_floats>
+		<reference_key />
+		<reference_qual />
+		<reference_qual_condition table="change_request" />
+		<reference_type />
+		<sizeclass />
+		<spell_check>false</spell_check>
+		<staged>false</staged>
+		<sys_class_name>sys_decision_input</sys_class_name>
+		<sys_created_by>admin</sys_created_by>
+		<sys_created_on>2019-04-01 16:04:18</sys_created_on>
+		<sys_id>2051b669dbacb30036549875db9619d1</sys_id>
+		<sys_mod_count>1</sys_mod_count>
+		<sys_name>Change request</sys_name>
+		<sys_package display_value="Global" source="global">global</sys_package>
+		<sys_policy />
+		<sys_scope display_value="Global">global</sys_scope>
+		<sys_update_name>sys_decision_input_2051b669dbacb30036549875db9619d1</sys_update_name>
+		<sys_updated_by>admin</sys_updated_by>
+		<sys_updated_on>2019-04-01 16:04:19</sys_updated_on>
+		<table_reference>false</table_reference>
+		<text_index>false</text_index>
+		<unique>false</unique>
+		<use_dependent_field>false</use_dependent_field>
+		<use_dynamic_default>false</use_dynamic_default>
+		<use_reference_qualifier>simple</use_reference_qualifier>
+		<virtual>false</virtual>
+		<widget />
+		<write_roles />
+		<xml_view>false</xml_view>
+	</sys_decision_input>
+
+    <sys_decision_input action="INSERT_OR_UPDATE">
+		<active>true</active>
+		<array>false</array>
+		<array_denormalized>false</array_denormalized>
+		<attributes>element_mapping_provider=com.glide.decision_table.data.DecisionTableVariableMapper</attributes>
+		<audit>false</audit>
+		<calculation>
+			<![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]>
+		</calculation>
+		<choice />
+		<choice_field />
+		<choice_table />
+		<column_label>DevOps Stage Run</column_label>
+		<comments />
+		<create_roles />
+		<default_value />
+		<defaultsort />
+		<delete_roles />
+		<dependent />
+		<dependent_on_field />
+		<display>false</display>
+		<dynamic_creation>false</dynamic_creation>
+		<dynamic_creation_script />
+		<dynamic_default_value display_value="" />
+		<dynamic_ref_qual display_value="" />
+		<element>u_devops_stage_run</element>
+		<element_reference>false</element_reference>
+		<foreign_database />
+		<function_definition />
+		<function_field>false</function_field>
+		<help />
+		<hint />
+		<internal_type display_value="Reference">reference</internal_type>
+		<label>DevOps Stage Run</label>
+		<mandatory>false</mandatory>
+		<max_length>32</max_length>
+		<model display_value="DevOps Approval Policy">fd4136a9dbacb30036549875db961983</model>
+		<model_id>fd4136a9dbacb30036549875db961983</model_id>
+		<model_table>sys_decision</model_table>
+		<name>var__m_sys_decision_input_fd4136a9dbacb30036549875db961983</name>
+		<next_element />
+		<order>100</order>
+		<primary>false</primary>
+		<read_only>false</read_only>
+		<read_roles />
+		<reference display_value="App Stage Run" name="sn_devops_app_stage_run">sn_devops_app_stage_run</reference>
+		<reference_cascade_rule />
+		<reference_floats>false</reference_floats>
+		<reference_key />
+		<reference_qual />
+		<reference_qual_condition table="sn_devops_app_stage_run" />
+		<reference_type />
+		<sizeclass />
+		<spell_check>false</spell_check>
+		<staged>false</staged>
+		<sys_class_name>sys_decision_input</sys_class_name>
+		<sys_created_by>admin</sys_created_by>
+		<sys_created_on>2019-04-01 16:12:05</sys_created_on>
+		<sys_id>39e1b6a9dbacb30036549875db9619be</sys_id>
+		<sys_mod_count>1</sys_mod_count>
+		<sys_name>DevOps Stage Run</sys_name>
+		<sys_package display_value="Global" source="global">global</sys_package>
+		<sys_policy />
+		<sys_scope display_value="Global">global</sys_scope>
+		<sys_update_name>sys_decision_input_39e1b6a9dbacb30036549875db9619be</sys_update_name>
+		<sys_updated_by>admin</sys_updated_by>
+		<sys_updated_on>2019-04-01 16:12:05</sys_updated_on>
+		<table_reference>false</table_reference>
+		<text_index>false</text_index>
+		<unique>false</unique>
+		<use_dependent_field>false</use_dependent_field>
+		<use_dynamic_default>false</use_dynamic_default>
+		<use_reference_qualifier>simple</use_reference_qualifier>
+		<virtual>false</virtual>
+		<widget />
+		<write_roles />
+		<xml_view>false</xml_view>
+	</sys_decision_input>
+
+    <sys_decision_question action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <answer>d414322ddbacb30036549875db9619f7</answer>
+        <condition table="var__m_sys_decision_input_fd4136a9dbacb30036549875db961983">
+            u_devops_stage_run.change_requestSAMEASchange_request^u_devops_stage_run.calculated_risk=4^u_devops_stage_run.calculated_impact=3^EQ
+            <item goto="false" or="false" field="" endquery="true" value="" operator="=" newquery="false" />
+        </condition>
+        <decision_table display_value="DevOps Approval Policy">fd4136a9dbacb30036549875db961983</decision_table>
+        <default_answer>false</default_answer>
+        <input_table>var__m_sys_decision_input_fd4136a9dbacb30036549875db961983</input_table>
+        <label>DevOps Low Risk</label>
+        <order>0</order>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-04-01 16:14:27</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>a233bae9dbacb30036549875db9619cc</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_overrides display_value="" />
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-04-01 16:17:43</sys_updated_on>
+    </sys_decision_question>
 </unload>
