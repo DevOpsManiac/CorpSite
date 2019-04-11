@@ -50,11 +50,6 @@
                                                 Secret Mountain Facility
                                             </a>
                                         </li>
-                                        <li>
-                                            <a href="#">
-                                                Springfield
-                                            </a>
-                                        </li>
                                     </ul>
                                 </li>
                             </ul>
