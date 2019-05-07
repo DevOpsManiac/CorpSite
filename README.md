@@ -1,6 +1,3 @@
 # CorpSite
 
-This is our corporate website..
-Need to build the site out.
-With Variables...
-Run Script..
+This is a demo of a corporate website.  The goal is to show changes to this app propigate through the DevOps pipeline.
