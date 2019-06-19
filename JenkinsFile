@@ -15,7 +15,7 @@ pipeline {
             parallel {
                 stage('UAT unit test') {
                     steps {
-                        echo 'UAT unit tests'
+                        echo 'UAT unit test'
                     }
                 }
                 stage('UAT functional test') {
