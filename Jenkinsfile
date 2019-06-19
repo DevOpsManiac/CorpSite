@@ -28,7 +28,16 @@ pipeline {
                     mvn --version
                 '''
                 sh 'mvn package'
-                sh 'scp -i sc_lab_jenkins.pem target/globex-web.war ubuntu@corp-uat.sndevops.xyz:/opt/tomcat/webapps'
+
+                publishOverSsh {
+                    server('CorpSite-UAT') {
+                        transferSet {
+                            sourceFiles('target/globex-web.war'),
+                            removePrefix('target/'),
+                            remoteDirectory('/opt/tomcat/webapps')
+                        }
+                    }
+                }
             }
         }
         stage('UAT test') {
