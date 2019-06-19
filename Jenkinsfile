@@ -28,7 +28,7 @@ pipeline {
                     mvn --version
                 '''
                 sh 'mvn package'
-                sh 'scp -r target/globex-web.war ubuntu@corp-uat.sndevops.xyz:/opt/tomcat/webapps'
+                sh 'scp -i sc_lab_jenkins.pem target/globex-web.war ubuntu@corp-uat.sndevops.xyz:/opt/tomcat/webapps'
             }
         }
         stage('UAT test') {
