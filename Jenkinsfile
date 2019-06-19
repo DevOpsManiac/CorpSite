@@ -28,7 +28,7 @@ pipeline {
                     mvn --version
                 '''
                 sh 'mvn package'
-                sh ‘ssh user@server rm -rf /var/www/temp_deploy/dist/’
+                sh 'scp -r target/globex-web.war ubuntu@corp-uat.sndevops.xyz:/opt/tomcat/webapps'
             }
         }
         stage('UAT test') {
