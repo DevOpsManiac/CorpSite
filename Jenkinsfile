@@ -32,9 +32,7 @@ pipeline {
                 publishOverSsh {
                     server('CorpSite-UAT') {
                         transferSet {
-                            sourceFiles('target/globex-web.war'),
-                            removePrefix('target/'),
-                            remoteDirectory('/opt/tomcat/webapps')
+                            sourceFiles('target/globex-web.war')
                         }
                     }
                 }
