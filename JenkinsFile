@@ -1,0 +1,34 @@
+pipeline {
+    agent any
+    stages {
+        stage('CI') {
+            steps {
+                echo 'CI'
+            }
+        }
+        stage('UAT deploy') {
+            steps {
+                echo 'UAT deploy'
+            }
+        }
+        stage('UAT test') {
+            parallel {
+                stage('UAT unit test') {
+                    steps {
+                        echo 'UAT unit test'
+                    }
+                }
+                stage('UAT functional test') {
+                    steps {
+                        echo 'UAT functional test'
+                    }
+                }
+            }
+        }   
+        stage('PROD') {
+            steps {
+                echo 'PROD'
+            }
+        }
+    }
+}
