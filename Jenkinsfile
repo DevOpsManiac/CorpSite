@@ -1,8 +1,7 @@
 pipeline {
     agent any
     tools { 
-        maven 'Maven 3.6.0' 
-        jdk 'jdk8' 
+        maven 'Jenkins Maven' 
     }
     stages {
         stage('CI') {
@@ -23,7 +22,13 @@ pipeline {
         }
         stage('UAT deploy') {
             steps {
-                echo 'UAT deploy'
+                sh '''
+                    export M2_HOME=/opt/apache-maven-3.6.0 # your Mavan home path
+                    export PATH=$PATH:$M2_HOME/bin
+                    mvn --version
+                '''
+                sh 'mvn package'
+                sh ‘ssh user@server rm -rf /var/www/temp_deploy/dist/’
             }
         }
         stage('UAT test') {
