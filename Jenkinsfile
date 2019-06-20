@@ -33,7 +33,7 @@ pipeline {
                     sshPublisher(continueOnError: false, failOnError: true,
                     publishers: [
                         sshPublisherDesc(
-                            configName:'CorpSite-UAT',
+                            configName:'CorpSite%20UAT',
                             verbose: true,
                             transfers: [
                                 sshTransfer(
