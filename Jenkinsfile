@@ -29,16 +29,6 @@ pipeline {
                 '''
                 sh 'mvn package'
 
-                publishOverSsh {
-                    server('CorpSite-UAT') {
-                        transferSet {
-                            sourceFiles('target/globex-web.war'),
-                            removePrefix('target/'),
-                            remoteDirectory('/opt/tomcat/webapps')
-                        }
-                    }
-                }
-
                 script {
                     sshPublisher(continueOnError: false, failOnError: true,
                     publishers: [
