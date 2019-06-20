@@ -74,11 +74,8 @@ pipeline {
         }   
         stage('PROD') {
             steps {
-                //script {
-                //    sncChangeLookup(url: 'https://devopsdemo.service-now.com/api/sn_devops/execution/change_control', credentials: 'DevOpsIntegrationUser')
-                //}
-
                 script {
+                    //snDevOps
                     sshPublisher(continueOnError: false, failOnError: true,
                     publishers: [
                         sshPublisherDesc(
