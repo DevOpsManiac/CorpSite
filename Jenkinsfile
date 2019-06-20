@@ -32,10 +32,32 @@ pipeline {
                 publishOverSsh {
                     server('CorpSite-UAT') {
                         transferSet {
-                            sourceFiles('target/globex-web.war')
+                            sourceFiles('target/globex-web.war'),
+                            removePrefix('target/'),
+                            remoteDirectory('/opt/tomcat/webapps')
                         }
                     }
                 }
+
+                script {
+                    sshPublisher(
+                    continueOnError: false, failOnError: true,
+                    publishers: [
+                        sshPublisherDesc(
+                        configName:'CorpSite-UAT',
+                        verbose: true,
+                        transfers: [
+                            sshTransfer(
+                                sourceFiles: 'target/globex-web.war',
+                                removePrefix: 'target/',
+                                remoteDirectory: '/opt/tomcat/webapps'
+                            )
+                        ])
+                    ])
+                    }
+
+
+                sh 'scp -i sc_lab_jenkins.pem target/globex-web.war ubuntu@corp-uat.sndevops.xyz:/opt/tomcat/webapps'
             }
         }
         stage('UAT test') {
