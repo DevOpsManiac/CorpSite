@@ -44,12 +44,10 @@ public class TestWelcome {
                 .andExpect(view().name("index"))
                 .andExpect(forwardedUrl("/WEB-INF/views/index.jsp"))
                 .andExpect(model().attribute("msg", "we're not evil"));
-
     }
 
     @Test
     public void testAbc() {
         assertEquals(2, 1 + 1);
     }
-
 }
