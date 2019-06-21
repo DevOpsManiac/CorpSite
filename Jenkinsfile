@@ -78,6 +78,7 @@ pipeline {
                             -Dsonar.projectKey=CorpSite \
                             -Dsonar.host.url=http://sonarqube.sndevops.xyz:9000 \
                             -Dsonar.login=efef5144be738a606c23fff3f139f00965b82869 \
+                            -Dsonar.exclusions=src/main/webapp/resources/js/bootstrap.js
                             -Dsonar.analysis.scm=$GIT_COMMIT \
                             -Dsonar.analysis.buildURL=$BUILD_URL
                         '''
