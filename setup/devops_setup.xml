@@ -12,6 +12,84 @@ version: 2/19/2019
 
 -->
 <unload unload_date="2019-02-19 23:26:48">
+
+
+    <sn_devops_planning_tool action="INSERT_OR_UPDATE">
+<configuration_item display_value=""/>
+<connected_date/>
+<connection_alias display_value="sn_devops.JIRA">46d1de63670523008b52f3b457415a35</connection_alias>
+<connection_state>disconnected</connection_state>
+<epic_custom_field_id/>
+<external_url/>
+<last_discovery/>
+<manual_configuration>false</manual_configuration>
+<map_to_app>project</map_to_app>
+<map_to_feature>epic</map_to_feature>
+<map_to_version>release</map_to_version>
+<map_to_work_item>issue</map_to_work_item>
+<name>Jira</name>
+<same_instance>yes</same_instance>
+<sys_class_name>sn_devops_planning_tool</sys_class_name>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2019-07-02 15:58:34</sys_created_on>
+<sys_domain>global</sys_domain>
+<sys_id>f822e8dbdbdab300811177421f9619cc</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2019-07-02 15:58:34</sys_updated_on>
+<tool_definition display_value="Jira">62946de9c7123300b8e302b827c260d9</tool_definition>
+<tool_url>http://jira-demo.sndevops.xyz</tool_url>
+<webhook_url>https://&lt;DevOps integration user ID&gt;:&lt;integration user password&gt;@devopspoa.service-now.com/api/sn_devops/v1/devops/tool/event/f822e8dbdbdab300811177421f9619cc</webhook_url>
+</sn_devops_planning_tool>
+
+
+<sn_devops_code_tool action="INSERT_OR_UPDATE">
+<configuration_item display_value=""/>
+<connected_date/>
+<connection_alias display_value="sn_devops.GitHub">ceaacef4b36223001e18a7e4c6a8dc83</connection_alias>
+<connection_state>disconnected</connection_state>
+<external_url/>
+<last_discovery/>
+<manual_configuration>false</manual_configuration>
+<name>Github</name>
+<sys_class_name>sn_devops_code_tool</sys_class_name>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2019-07-02 16:00:56</sys_created_on>
+<sys_domain>global</sys_domain>
+<sys_id>55c2641fdbdab300811177421f96195a</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2019-07-02 16:00:56</sys_updated_on>
+<tool_definition display_value="GitHub">55b4a52dc7123300b8e302b827c260c6</tool_definition>
+<tool_url>https://github.com</tool_url>
+<webhook_url>https://&lt;DevOps integration user ID&gt;:&lt;integration user password&gt;@devopspoa.service-now.com/api/sn_devops/v1/devops/tool/event/55c2641fdbdab300811177421f96195a</webhook_url>
+</sn_devops_code_tool>
+
+
+<sn_devops_orchestration_tool action="INSERT_OR_UPDATE">
+<configuration_item display_value=""/>
+<connected_date/>
+<connection_alias display_value="sn_devops.Jenkins">cee835103b522300b200655593efc47c</connection_alias>
+<connection_state>disconnected</connection_state>
+<external_url>https://hi.service-now.com/kb_view.do?sysparm_article=KB0745378</external_url>
+<last_discovery/>
+<manual_configuration>false</manual_configuration>
+<name>Jenkins</name>
+<sys_class_name>sn_devops_orchestration_tool</sys_class_name>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2019-07-02 16:01:51</sys_created_on>
+<sys_domain>global</sys_domain>
+<sys_id>0ef2281fdbdab300811177421f9619df</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2019-07-02 16:01:51</sys_updated_on>
+<tool_definition display_value="Jenkins">19c4a52dc7123300b8e302b827c260d1</tool_definition>
+<tool_url>http://jenkins-uat.sndevops.xyz</tool_url>
+<type>jenkins</type>
+<webhook_url>https://&lt;DevOps integration user ID&gt;:&lt;integration user password&gt;@devopspoa.service-now.com/api/sn_devops/v1/devops/tool/event/0ef2281fdbdab300811177421f9619df</webhook_url>
+</sn_devops_orchestration_tool>
+
+
     <sys_user_has_role action="INSERT_OR_UPDATE">
         <granted_by display_value="">not-applicable</granted_by>
         <included_in_role display_value=""/>
@@ -86,80 +164,117 @@ version: 2/19/2019
         <tool_id/>
         <url>https://devopsdemo.service-now.com/cmdb_application_product_model.do?sys_id=b5e0578bdbefa30064ccd4f3ce96192b</url>
     </sn_devops_app>
-    <sn_devops_app_stage action="INSERT_OR_UPDATE">
-        <app display_value="CorpSite">24b1db8bdbefa30064ccd4f3ce9619b6</app>
-        <change_approval_group display_value=""/>
-        <change_control>false</change_control>
-        <configuration_item display_value=""/>
-        <name>CorpSite - CI</name>
-        <order>10</order>
-        <risk_threshold>50</risk_threshold>
-        <stage display_value="CI">1d76a0f5db272300588cf9361d96194f</stage>
-        <standard_change_template display_value=""/>
-        <sys_created_by>devops.admin</sys_created_by>
-        <sys_created_on>2019-02-19 15:51:42</sys_created_on>
-        <sys_domain>global</sys_domain>
-        <sys_id>00452758db7b670064ccd4f3ce96197c</sys_id>
-        <sys_mod_count>2</sys_mod_count>
-        <sys_updated_by>devops.admin</sys_updated_by>
-        <sys_updated_on>2019-02-19 16:26:50</sys_updated_on>
-        <type>build_test</type>
-    </sn_devops_app_stage>
-    <sn_devops_app_stage action="INSERT_OR_UPDATE">
-        <app display_value="CorpSite">24b1db8bdbefa30064ccd4f3ce9619b6</app>
-        <change_approval_group display_value=""/>
-        <change_control>false</change_control>
-        <configuration_item display_value="CorpSite UAT">d988e839db272300588cf9361d9619ca</configuration_item>
-        <name>CorpSite - UAT</name>
-        <order>20</order>
-        <risk_threshold>50</risk_threshold>
-        <stage display_value="UAT">40a6e0f5db272300588cf9361d961902</stage>
-        <standard_change_template display_value="Std DevOps">87e7e039db272300588cf9361d961956</standard_change_template>
-        <sys_created_by>devops.admin</sys_created_by>
-        <sys_created_on>2019-02-19 15:51:42</sys_created_on>
-        <sys_domain>global</sys_domain>
-        <sys_id>08452758db7b670064ccd4f3ce96197c</sys_id>
-        <sys_mod_count>6</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2019-02-19 20:52:27</sys_updated_on>
-        <type>deploy</type>
-    </sn_devops_app_stage>
-    <sn_devops_app_stage action="INSERT_OR_UPDATE">
-        <app display_value="CorpSite">24b1db8bdbefa30064ccd4f3ce9619b6</app>
-        <change_approval_group display_value=""/>
-        <change_control>false</change_control>
-        <configuration_item display_value="CorpSite UAT">d988e839db272300588cf9361d9619ca</configuration_item>
-        <name>CorpSite - UAT test</name>
-        <order>30</order>
-        <risk_threshold>50</risk_threshold>
-        <stage display_value="UAT">40a6e0f5db272300588cf9361d961902</stage>
-        <standard_change_template display_value=""/>
-        <sys_created_by>devops.admin</sys_created_by>
-        <sys_created_on>2019-02-19 16:24:21</sys_created_on>
-        <sys_domain>global</sys_domain>
-        <sys_id>43ac235cdb7b670064ccd4f3ce96197e</sys_id>
-        <sys_mod_count>2</sys_mod_count>
-        <sys_updated_by>devops.admin</sys_updated_by>
-        <sys_updated_on>2019-02-19 16:26:57</sys_updated_on>
-        <type>test</type>
-    </sn_devops_app_stage>
-    <sn_devops_app_stage action="INSERT_OR_UPDATE">
-        <app display_value="CorpSite">24b1db8bdbefa30064ccd4f3ce9619b6</app>
-        <change_approval_group display_value=""/>
-        <change_control>false</change_control>
-        <configuration_item display_value="CorpSite PROD">94b8ac39db272300588cf9361d96192a</configuration_item>
-        <name>CorpSite - PROD</name>
-        <order>40</order>
-        <risk_threshold>50</risk_threshold>
-        <stage display_value="PROD">84d624f5db272300588cf9361d96196e</stage>
-        <standard_change_template display_value="Std DevOps">87e7e039db272300588cf9361d961956</standard_change_template>
-        <sys_created_by>devops.admin</sys_created_by>
-        <sys_created_on>2019-02-19 15:51:42</sys_created_on>
-        <sys_domain>global</sys_domain>
-        <sys_id>88452758db7b670064ccd4f3ce96197c</sys_id>
-        <sys_mod_count>6</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2019-02-19 21:43:38</sys_updated_on>
-        <type>deploy</type>
-    </sn_devops_app_stage>
+
+
+
+<sn_devops_app action="INSERT_OR_UPDATE">
+<active>true</active>
+<application_service display_value="CorpSite">0d998387dbefa30064ccd4f3ce9619eb</application_service>
+<closed_date/>
+<discovered>2019-07-02 16:00:57</discovered>
+<external_created_date/>
+<id>10001</id>
+<last_import/>
+<name>CorpSite</name>
+<native_id>COR</native_id>
+<pipeline display_value="Normal">224620f5db272300588cf9361d9619f6</pipeline>
+<planning_tool display_value="Jira">f822e8dbdbdab300811177421f9619cc</planning_tool>
+<previous_native_id/>
+<start_date/>
+<sys_created_by>system</sys_created_by>
+<sys_created_on>2019-07-02 16:00:57</sys_created_on>
+<sys_domain>global</sys_domain>
+<sys_domain_path>/</sys_domain_path>
+<sys_id>e0d2e49fdbd6b30036549875db961974</sys_id>
+<sys_mod_count>1</sys_mod_count>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2019-07-02 16:05:24</sys_updated_on>
+<team display_value=""/>
+<tool_id/>
+<track>false</track>
+<url>http://jira-demo.sndevops.xyz/projects/COR/summary</url>
+</sn_devops_app>
+
+<sn_devops_step action="INSERT_OR_UPDATE">
+<app display_value="CorpSite">e0d2e49fdbd6b30036549875db961974</app>
+<change_approval_group display_value="CorpSite Dev" name="CorpSite Dev">5b58a162dbeb630064ccd4f3ce96194b</change_approval_group>
+<change_control>false</change_control>
+<configuration_item display_value="Jenkins master">a271a3d1dbf76300c49df5861d96194e</configuration_item>
+<impact_threshold/>
+<name>CorpSite - CI</name>
+<order>10</order>
+<risk_threshold/>
+<stage display_value="CI">1d76a0f5db272300588cf9361d96194f</stage>
+<standard_change_template display_value=""/>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2019-07-02 16:10:18</sys_created_on>
+<sys_domain>global</sys_domain>
+<sys_id>11f4245fdbdab300811177421f9619b0</sys_id>
+<sys_mod_count>3</sys_mod_count>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2019-07-02 16:13:00</sys_updated_on>
+<type>build_test</type>
+</sn_devops_step>
+<sn_devops_step action="INSERT_OR_UPDATE">
+<app display_value="CorpSite">e0d2e49fdbd6b30036549875db961974</app>
+<change_approval_group display_value="CorpSite Dev" name="CorpSite Dev">5b58a162dbeb630064ccd4f3ce96194b</change_approval_group>
+<change_control>false</change_control>
+<configuration_item display_value="CorpSite UAT Server">8c498387dbefa30064ccd4f3ce961946</configuration_item>
+<impact_threshold/>
+<name>CorpSite - UAT</name>
+<order>20</order>
+<risk_threshold/>
+<stage display_value="UAT">40a6e0f5db272300588cf9361d961902</stage>
+<standard_change_template display_value=""/>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2019-07-02 16:10:18</sys_created_on>
+<sys_domain>global</sys_domain>
+<sys_id>19f4245fdbdab300811177421f9619b0</sys_id>
+<sys_mod_count>3</sys_mod_count>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2019-07-02 16:13:06</sys_updated_on>
+<type>deploy</type>
+</sn_devops_step>
+<sn_devops_step action="INSERT_OR_UPDATE">
+<app display_value="CorpSite">e0d2e49fdbd6b30036549875db961974</app>
+<change_approval_group display_value="CorpSite Dev" name="CorpSite Dev">5b58a162dbeb630064ccd4f3ce96194b</change_approval_group>
+<change_control>false</change_control>
+<configuration_item display_value="CorpSite UAT Server">8c498387dbefa30064ccd4f3ce961946</configuration_item>
+<impact_threshold/>
+<name>CorpSite - UAT test</name>
+<order>30</order>
+<risk_threshold/>
+<stage display_value="UAT">40a6e0f5db272300588cf9361d961902</stage>
+<standard_change_template display_value=""/>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2019-07-02 16:13:20</sys_created_on>
+<sys_domain>global</sys_domain>
+<sys_id>a5a5649fdbdab300811177421f9619ed</sys_id>
+<sys_mod_count>1</sys_mod_count>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2019-07-02 16:13:31</sys_updated_on>
+<type>test</type>
+</sn_devops_step>
+<sn_devops_step action="INSERT_OR_UPDATE">
+<app display_value="CorpSite">e0d2e49fdbd6b30036549875db961974</app>
+<change_approval_group display_value="CorpSite Dev" name="CorpSite Dev">5b58a162dbeb630064ccd4f3ce96194b</change_approval_group>
+<change_control>false</change_control>
+<configuration_item display_value="CorpSite Prod Server">e994b2d6db73a30054c2f1471d961914</configuration_item>
+<impact_threshold/>
+<name>CorpSite - PROD</name>
+<order>40</order>
+<risk_threshold/>
+<stage display_value="PROD">84d624f5db272300588cf9361d96196e</stage>
+<standard_change_template display_value=""/>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2019-07-02 16:10:18</sys_created_on>
+<sys_domain>global</sys_domain>
+<sys_id>99f4245fdbdab300811177421f9619b0</sys_id>
+<sys_mod_count>3</sys_mod_count>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2019-07-02 16:13:15</sys_updated_on>
+<type>deploy</type>
+</sn_devops_step>
+
+
 </unload>
