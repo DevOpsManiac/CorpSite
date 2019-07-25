@@ -5,6 +5,7 @@ pipeline {
     }
     stages {
         stage('CI') {
+            snDevOpsMapping(https://devopsdemo.service-now.com/nav_to.do?uri=sn_devops_job.do?sys_id=2a92476edb41b300c49df5861d9619f0)
             steps {
                 sh '''
                     export M2_HOME=/opt/apache-maven-3.6.0 # your Mavan home path
@@ -19,8 +20,10 @@ pipeline {
                     junit '**/target/surefire-reports/*.xml' 
                 }
             }
+            snDevOpsMappingPolicy()
         }
         stage('UAT deploy') {
+            snDevOpsMapping(https://devopsdemo.service-now.com/nav_to.do?uri=sn_devops_job.do?sys_id=2a92476edb41b300c49df5861d9619f0)
             steps {
                 sh '''
                     export M2_HOME=/opt/apache-maven-3.6.0 # your Mavan home path
@@ -48,6 +51,7 @@ pipeline {
             }
         }
         stage('UAT test') {
+            snDevOpsMapping(https://devopsdemo.service-now.com/nav_to.do?uri=sn_devops_job.do?sys_id=2a92476edb41b300c49df5861d9619f0)
             parallel {
                 stage('UAT unit test') {
                     steps {
@@ -85,25 +89,44 @@ pipeline {
                     }
                 }
             }
-        }   
-        stage('PROD') {
-            steps {
-                script {
-                    //snDevOps
-                    sshPublisher(continueOnError: false, failOnError: true,
-                    publishers: [
-                        sshPublisherDesc(
-                            configName:'CorpSite PROD',
-                            verbose: true,
-                            transfers: [
-                                sshTransfer(
-                                    sourceFiles: 'target/globex-web.war',
-                                    removePrefix: 'target/',
-                                    remoteDirectory: '/opt/tomcat/webapps'
+        }
+        stage('Deploy') {
+            snDevOpsMapping(https://devopsdemo.service-now.com/nav_to.do?uri=sn_devops_job.do?sys_id=2a92476edb41b300c49df5861d9619f0)
+            parallel {
+
+                stage('UAT') {
+                    when {
+                        branch 'development'
+                    }
+                    steps {
+                        
+                    }
+                }
+                
+                stage('PROD') {
+                    when {
+                        branch 'master'
+                    }
+                    snDevOpsMapping(https://devopsdemo.service-now.com/nav_to.do?uri=sn_devops_job.do?sys_id=2a92476edb41b300c49df5861d9619f0)
+                    steps {
+                        script {
+                            snDevOpsChange('master')
+                            sshPublisher(continueOnError: false, failOnError: true,
+                            publishers: [
+                                sshPublisherDesc(
+                                    configName:'CorpSite PROD',
+                                    verbose: true,
+                                    transfers: [
+                                        sshTransfer(
+                                            sourceFiles: 'target/globex-web.war',
+                                            removePrefix: 'target/',
+                                            remoteDirectory: '/opt/tomcat/webapps'
+                                        )
+                                    ]
                                 )
-                            ]
-                        )
-                    ])
+                            ])
+                        }
+                    }
                 }
             }
         }
