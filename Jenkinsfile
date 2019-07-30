@@ -6,7 +6,7 @@ pipeline {
     stages {
         stage('CI') {
             steps {
-                snDevOpsStep '11f4245fdbdab300811177421f9619b0'
+                //snDevOpsStep '11f4245fdbdab300811177421f9619b0'
                 sh '''
                     export M2_HOME=/opt/apache-maven-3.6.0 # your Mavan home path
                     export PATH=$PATH:$M2_HOME/bin
@@ -23,7 +23,7 @@ pipeline {
         }
         stage('UAT deploy') {
             steps {
-                snDevOpsStep '19f4245fdbdab300811177421f9619b0'
+                //snDevOpsStep '19f4245fdbdab300811177421f9619b0'
                 sh '''
                     export M2_HOME=/opt/apache-maven-3.6.0 # your Mavan home path
                     export PATH=$PATH:$M2_HOME/bin
@@ -53,7 +53,7 @@ pipeline {
             parallel {
                 stage('UAT unit test') {
                     steps {
-                        snDevOpsStep 'a5a5649fdbdab300811177421f9619ed'
+                        //snDevOpsStep 'a5a5649fdbdab300811177421f9619ed'
                         sh '''
                             export M2_HOME=/opt/apache-maven-3.6.0 # your Mavan home path
                             export PATH=$PATH:$M2_HOME/bin
@@ -96,7 +96,7 @@ pipeline {
                         branch 'development'
                     }
                     steps {
-                        snDevOpsStep '99f4245fdbdab300811177421f9619b0'
+                        //snDevOpsStep '99f4245fdbdab300811177421f9619b0'
                     }
                 }
                 stage('PROD') {
@@ -104,9 +104,10 @@ pipeline {
                         branch 'master'
                     }
                     steps {
-                        snDevOpsStep '99f4245fdbdab300811177421f9619b0'
-                        script {
-                            snDevOpsChange('master')
+                        //snDevOpsStep '99f4245fdbdab300811177421f9619b0'
+                        //snDevOpsChange('master')
+                        //snDevOpsChange()
+                        script {                
                             sshPublisher(continueOnError: false, failOnError: true,
                             publishers: [
                                 sshPublisherDesc(
