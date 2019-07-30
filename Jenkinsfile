@@ -93,9 +93,7 @@ pipeline {
             parallel {
                 
                 stage('PROD') {
-                    when {
-                        branch 'master'
-                    }
+                    
                     steps {
                         //snDevOpsStep '99f4245fdbdab300811177421f9619b0'
                         //snDevOpsChange('master')
