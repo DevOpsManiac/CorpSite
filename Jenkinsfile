@@ -5,7 +5,7 @@ pipeline {
     }
     stages {
         stage('CI') {
-            snDevOpsMapping(https://devopsdemo.service-now.com/nav_to.do?uri=sn_devops_job.do?sys_id=2a92476edb41b300c49df5861d9619f0)
+            snDevOpsStep '11f4245fdbdab300811177421f9619b0'
             steps {
                 sh '''
                     export M2_HOME=/opt/apache-maven-3.6.0 # your Mavan home path
@@ -23,7 +23,7 @@ pipeline {
             snDevOpsMappingPolicy()
         }
         stage('UAT deploy') {
-            snDevOpsMapping(https://devopsdemo.service-now.com/nav_to.do?uri=sn_devops_job.do?sys_id=2a92476edb41b300c49df5861d9619f0)
+            snDevOpsStep '19f4245fdbdab300811177421f9619b0'
             steps {
                 sh '''
                     export M2_HOME=/opt/apache-maven-3.6.0 # your Mavan home path
@@ -51,7 +51,7 @@ pipeline {
             }
         }
         stage('UAT test') {
-            snDevOpsMapping(https://devopsdemo.service-now.com/nav_to.do?uri=sn_devops_job.do?sys_id=2a92476edb41b300c49df5861d9619f0)
+            snDevOpsStep 'a5a5649fdbdab300811177421f9619ed'
             parallel {
                 stage('UAT unit test') {
                     steps {
@@ -91,7 +91,7 @@ pipeline {
             }
         }
         stage('Deploy') {
-            snDevOpsMapping(https://devopsdemo.service-now.com/nav_to.do?uri=sn_devops_job.do?sys_id=2a92476edb41b300c49df5861d9619f0)
+            snDevOpsStep '99f4245fdbdab300811177421f9619b0'
             parallel {
 
                 stage('UAT') {
@@ -107,7 +107,7 @@ pipeline {
                     when {
                         branch 'master'
                     }
-                    snDevOpsMapping(https://devopsdemo.service-now.com/nav_to.do?uri=sn_devops_job.do?sys_id=2a92476edb41b300c49df5861d9619f0)
+                    snDevOpsStep ''
                     steps {
                         script {
                             snDevOpsChange('master')
