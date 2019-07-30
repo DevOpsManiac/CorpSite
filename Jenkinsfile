@@ -20,7 +20,6 @@ pipeline {
                     junit '**/target/surefire-reports/*.xml' 
                 }
             }
-            snDevOpsMappingPolicy()
         }
         stage('UAT deploy') {
             steps {
