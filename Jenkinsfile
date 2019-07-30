@@ -91,13 +91,11 @@ pipeline {
         }
         stage('Deploy') {
             parallel {
-                
                 stage('PROD') {
-                    
                     steps {
                         //snDevOpsStep '99f4245fdbdab300811177421f9619b0'
                         //snDevOpsChange('master')
-                        //snDevOpsChange()
+                        snDevOpsChange()
                         script {                
                             sshPublisher(continueOnError: false, failOnError: true,
                             publishers: [
