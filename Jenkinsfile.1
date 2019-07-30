@@ -91,7 +91,14 @@ pipeline {
         }
         stage('Deploy') {
             parallel {
-                
+                stage('UAT') {
+                    when {
+                        branch 'development'
+                    }
+                    steps {
+                        //snDevOpsStep '99f4245fdbdab300811177421f9619b0'
+                    }
+                }
                 stage('PROD') {
                     when {
                         branch 'master'
