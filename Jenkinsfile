@@ -1,5 +1,5 @@
 node {
-    stages {
+
         stage('CI') {
             steps {
                 snDevOpsStep '11f4245fdbdab300811177421f9619b0'
@@ -107,5 +107,5 @@ node {
                 }
             }
         }
-    }
+    
 }
