@@ -6,15 +6,32 @@ pipeline {
     stages {
         stage('CI') {
             steps { echo 'CI' }  
+            steps { 
+                snDevOpsStep '0094aaf2db47fb009538f78eaf961972'
+                echo 'CI' 
+            }  
         }
         stage('UAT deploy') {
             steps { echo 'uat deploy' }
+            steps { 
+                snDevOpsStep '8c94aaf2db47fb009538f78eaf961971'
+                echo 'uat deploy' 
+            }
         }
         stage('UAT test') {
             steps { echo 'uat test' }
+            steps { 
+                snDevOpsStep '8094aaf2db47fb009538f78eaf961972'
+                echo 'uat test' 
+            }
         }
         stage('PROD') {
             steps { echo 'prod' }
+            steps { 
+                snDevOpsStep '8494aaf2db47fb009538f78eaf961971'
+                snDevOpsChange()
+                echo 'prod' 
+            }
         }
     }
 }
