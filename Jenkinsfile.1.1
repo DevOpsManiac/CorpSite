@@ -2,7 +2,7 @@
     node {
         stage('CI') {
             
-                snDevOpsStep 'cc90c672dbcfbb00b66d55535e9619d1'
+                snDevOpsStep '11f4245fdbdab300811177421f9619b0'
                 sh '''
                     export M2_HOME=/opt/apache-maven-3.6.0 # your Mavan home path
                     export PATH=$PATH:$M2_HOME/bin
@@ -16,7 +16,7 @@
         }
         stage('UAT deploy') {
            
-                snDevOpsStep 'c490c672dbcfbb00b66d55535e9619d1'
+                snDevOpsStep '19f4245fdbdab300811177421f9619b0'
                 sh '''
                     export M2_HOME=/opt/apache-maven-3.6.0 # your Mavan home path
                     export PATH=$PATH:$M2_HOME/bin
@@ -46,7 +46,7 @@
             parallel {
                 stage('UAT unit test') {
                     
-                        //snDevOpsStep '23b0c672dbcfbb00b66d55535e9619f4'
+                        //snDevOpsStep 'a5a5649fdbdab300811177421f9619ed'
                         sh '''
                             export M2_HOME=/opt/apache-maven-3.6.0 # your Mavan home path
                             export PATH=$PATH:$M2_HOME/bin
@@ -81,7 +81,7 @@
         }
         stage('PROD') {
            
-                snDevOpsStep '4090c672dbcfbb00b66d55535e9619d2'
+                snDevOpsStep '99f4245fdbdab300811177421f9619b0'
                 snDevOpsChange()
                 script {                
                     sshPublisher(continueOnError: false, failOnError: true,
