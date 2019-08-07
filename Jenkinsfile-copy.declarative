@@ -6,6 +6,8 @@ pipeline {
     stages {
         stage('CI') {
             steps {
+                echo 'CI'
+                /*
                 sh '''
                     export M2_HOME=/opt/apache-maven-3.6.0 # your Mavan home path
                     export PATH=$PATH:$M2_HOME/bin
@@ -13,6 +15,7 @@ pipeline {
                 '''
                 sh 'mvn compile'
                 sh 'mvn verify'
+                */
             }
             post {
                 success {
@@ -22,6 +25,8 @@ pipeline {
         }
         stage('UAT deploy') {
             steps {
+                echo 'uat deploy'
+                /*
                 sh '''
                     export M2_HOME=/opt/apache-maven-3.6.0 # your Mavan home path
                     export PATH=$PATH:$M2_HOME/bin
@@ -45,9 +50,12 @@ pipeline {
                         )
                     ])
                 }
+                */
             }
         }
         stage('UAT test') {
+            steps { echo 'uat test' }
+            /*
             parallel {
                 stage('UAT unit test') {
                     steps {
@@ -85,9 +93,12 @@ pipeline {
                     }
                 }
             }
+            */
         }
         stage('PROD') {
             steps {
+                echo 'prod'
+                /*
                 script {                
                     sshPublisher(continueOnError: false, failOnError: true,
                     publishers: [
@@ -104,6 +115,7 @@ pipeline {
                         )
                     ])
                 }
+                */
             }
         }
     }
