@@ -1,7 +1,11 @@
-
-    node {
+pipeline {
+    agent any
+    tools { 
+        maven 'Jenkins Maven' 
+    }
+    stages {
         stage('CI') {
-            
+            steps {
                 snDevOpsStep '11f4245fdbdab300811177421f9619b0'
                 sh '''
                     export M2_HOME=/opt/apache-maven-3.6.0 # your Mavan home path
@@ -10,12 +14,15 @@
                 '''
                 sh 'mvn compile'
                 sh 'mvn verify'
-            
+            }
+            post {
+                success {
                     junit '**/target/surefire-reports/*.xml' 
-           
+                }
+            }
         }
         stage('UAT deploy') {
-           
+            steps {
                 snDevOpsStep '19f4245fdbdab300811177421f9619b0'
                 sh '''
                     export M2_HOME=/opt/apache-maven-3.6.0 # your Mavan home path
@@ -40,12 +47,12 @@
                         )
                     ])
                 }
-            
+            }
         }
         stage('UAT test') {
             parallel {
                 stage('UAT unit test') {
-                    
+                    steps {
                         //snDevOpsStep 'a5a5649fdbdab300811177421f9619ed'
                         sh '''
                             export M2_HOME=/opt/apache-maven-3.6.0 # your Mavan home path
@@ -54,12 +61,15 @@
                         '''
                         sh 'mvn compile'
                         sh 'mvn verify'
-                    
+                    }
+                    post {
+                        success {
                             junit '**/target/surefire-reports/*.xml' 
-                    
+                        }
+                    }
                 }
                 stage('UAT static code test') {
-                    
+                    steps {
                         sh '''
                             export M2_HOME=/opt/apache-maven-3.6.0 # your Mavan home path
                             export PATH=$PATH:$M2_HOME/bin
@@ -75,12 +85,12 @@
                             -Dsonar.analysis.scm=$GIT_COMMIT \
                             -Dsonar.analysis.buildURL=$BUILD_URL
                         '''
-                    
+                    }
                 }
             }
         }
         stage('PROD') {
-           
+            steps {
                 snDevOpsStep '99f4245fdbdab300811177421f9619b0'
                 snDevOpsChange()
                 script {                
@@ -99,7 +109,7 @@
                         )
                     ])
                 }
-            
+            }
         }
     }
 }
