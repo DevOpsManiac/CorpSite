@@ -7,6 +7,7 @@ pipeline {
         stage('CI') {
             steps {
                 echo 'CI'
+                
                 /*
                 sh '''
                     export M2_HOME=/opt/apache-maven-3.6.0 # your Mavan home path
@@ -16,18 +17,20 @@ pipeline {
                 sh 'mvn compile'
                 sh 'mvn verify'
                 */
+                
             }
-            /*
-            post {
-                success {
-                    junit '**/target/surefire-reports/*.xml' 
-                }
-            }
-            */
+            
+            //post {
+            //    success {
+            //        junit '**/target/surefire-reports/*.xml' 
+            //    }
+            //}
+            
         }
         stage('UAT deploy') {
             steps {
                 echo 'uat deploy'
+                
                 /*
                 sh '''
                     export M2_HOME=/opt/apache-maven-3.6.0 # your Mavan home path
@@ -69,11 +72,13 @@ pipeline {
                         sh 'mvn compile'
                         sh 'mvn verify'
                     }
-                    post {
-                        success {
-                            junit '**/target/surefire-reports/*.xml' 
-                        }
-                    }
+                    */
+                    //post {
+                    //    success {
+                    //        junit '**/target/surefire-reports/*.xml' 
+                    //    }
+                    //}
+                /*
                 }
                 stage('UAT static code test') {
                     steps {
