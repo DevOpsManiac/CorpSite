@@ -97,7 +97,6 @@ pipeline {
                         branch 'development'
                     }
                     steps {
-                        
                     }
                 }
                 
