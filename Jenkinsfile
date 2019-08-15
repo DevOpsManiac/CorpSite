@@ -90,13 +90,14 @@ pipeline {
             }
         }
         stage('PROD') {
+            snDevOpsStep '99f4245fdbdab300811177421f9619b0'
             parallel {
                 stage('UAT') {
                     when {
                         branch 'development'
                     }
                     steps {
-                        snDevOpsStep '99f4245fdbdab300811177421f9619b0'
+                        
                     }
                 }
                 
@@ -105,7 +106,6 @@ pipeline {
                         branch 'master'
                     }
                     steps {
-                        snDevOpsStep '99f4245fdbdab300811177421f9619b0'
                         snDevOpsChange('master')
                         script {
                             sshPublisher(continueOnError: false, failOnError: true,
