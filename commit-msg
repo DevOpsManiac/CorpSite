@@ -1,0 +1,14 @@
+#!/bin/sh
+#
+# A hook script to check the commit log message for the presence of 
+# a work item id at the begining.
+# place this in .git/hooks
+
+commit_regex='(^[a-zA-Z0-9\-]+\:)'
+error_msg="No work item id in commit message."
+
+if ! grep -iqE "$commit_regex" "$1"; then
+    echo "$error_msg" >&2
+    #exit 0 if you want to warn but not abort
+    exit 1
+fi
