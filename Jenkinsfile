@@ -6,7 +6,7 @@ pipeline {
     stages {
         stage('CI') {
             steps {
-                snDevOpsStep "11f4245fdbdab300811177421f9619b0"
+                snDevOpsStep 
                 sh '''
                     export M2_HOME=/opt/apache-maven-3.6.0 # your Mavan home path
                     export PATH=$PATH:$M2_HOME/bin
@@ -23,7 +23,7 @@ pipeline {
         }
         stage('UAT deploy') {
             steps {
-                snDevOpsStep "19f4245fdbdab300811177421f9619b0"
+                snDevOpsStep 
                 sh '''
                     export M2_HOME=/opt/apache-maven-3.6.0 # your Mavan home path
                     export PATH=$PATH:$M2_HOME/bin
@@ -53,7 +53,7 @@ pipeline {
             parallel {
                 stage('UAT unit test') {
                     steps {
-                        snDevOpsStep "a5a5649fdbdab300811177421f9619ed"
+                        snDevOpsStep
                         sh '''
                             export M2_HOME=/opt/apache-maven-3.6.0 # your Mavan home path
                             export PATH=$PATH:$M2_HOME/bin
@@ -90,7 +90,7 @@ pipeline {
             }
         }
         stage('deploy') {
-            snDevOpsStep "99f4245fdbdab300811177421f9619b0"
+            snDevOpsStep
             parallel {
                 stage('UAT') {
                     when {
