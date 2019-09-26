@@ -83,16 +83,16 @@ pipeline {
             }
         }
         stage('PROD') {
-           
+           stage('PROD dev') {
                 when {
                     branch 'dev'
                 }
                 steps {
                     snDevOpsStep() 
                 }
+           }
             
-            
-       
+            stage('PROD master') {
                 when {
                     branch 'master'
                 }
@@ -115,7 +115,7 @@ pipeline {
                             )
                         ])
                     }
-                
+                }
                 
             }
         }
