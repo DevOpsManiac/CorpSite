@@ -83,13 +83,12 @@ pipeline {
             }
         }
         stage('PROD') {
-            snDevOpsStep()
             stage('UAT') {
                 when {
                     branch 'dev'
                 }
                 steps {
-                    
+                   snDevOpsStep() 
                 }
             }
             
@@ -98,6 +97,7 @@ pipeline {
                     branch 'master'
                 }
                 steps {
+                    snDevOpsStep()
                     snDevOpsChange()
                     script {
                         sshPublisher(continueOnError: false, failOnError: true,
