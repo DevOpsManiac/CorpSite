@@ -83,7 +83,7 @@ pipeline {
             }
         }
         stage('PROD') {
-            steps {
+            parallel {
                 stage('UAT') {
                     when {
                         branch 'dev'
