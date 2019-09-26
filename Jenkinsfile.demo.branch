@@ -94,6 +94,9 @@ pipeline {
             environment {
                 DEPLOY_ENV = "CorpSite UAT"
             }
+            steps {
+                sh 'echo "hi"'
+            }
             
         }
         stage('Predeploy-master') {
@@ -105,7 +108,9 @@ pipeline {
             environment {
                 DEPLOY_ENV = "CorpSite PROD"
             }
-            
+            steps {
+                sh 'echo "hi"'
+            }
         }
         stage('PROD') {
             steps {
