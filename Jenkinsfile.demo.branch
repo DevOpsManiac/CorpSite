@@ -3,6 +3,9 @@ pipeline {
     tools { 
         maven 'Jenkins Maven' 
     }
+    environment {
+        DEPLOY_ENV = 'UAT'
+    }
     stages {
         stage('CI') {
             steps {
@@ -89,7 +92,7 @@ pipeline {
                 }
             }
             steps {
-                env.DEPLOY_ENV = "CorpSite UAT"
+                ${DEPLOY_ENV} = "CorpSite UAT"
             }
         }
         stage('Predeploy-master') {
@@ -99,7 +102,7 @@ pipeline {
                 }
             }
             steps {
-                env.DEPLOY_ENV = "CorpSite PROD"
+                ${DEPLOY_ENV} = "CorpSite PROD"
             }
         }
         stage('PROD') {
@@ -110,7 +113,7 @@ pipeline {
                     sshPublisher(continueOnError: false, failOnError: true,
                     publishers: [
                         sshPublisherDesc(
-                            configName: ${env.DEPLOY_ENV},
+                            configName: ${DEPLOY_ENV},
                             verbose: true,
                             transfers: [
                                 sshTransfer(
