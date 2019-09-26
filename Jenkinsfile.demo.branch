@@ -89,7 +89,7 @@ pipeline {
                 }
             }
             steps {
-                env.DEPLOY_ENV = 'CorpSite UAT'
+                env.DEPLOY_ENV = "CorpSite UAT"
             }
         }
         stage('Predeploy-master') {
@@ -99,7 +99,7 @@ pipeline {
                 }
             }
             steps {
-                env.DEPLOY_ENV = 'CorpSite PROD'
+                env.DEPLOY_ENV = "CorpSite PROD"
             }
         }
         stage('PROD') {
