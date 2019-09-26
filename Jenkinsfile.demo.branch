@@ -82,18 +82,27 @@ pipeline {
                 }
             }
         }
-        stage('PROD dev') {
+        stage('Predeploy-dev') {
             when {
-                branch 'dev'
+                expression {
+                    env.BRANCH_NAME == 'dev'
+                }
             }
             steps {
-                snDevOpsStep() 
+                env.DEPLOY_ENV = 'CorpSite UAT'
             }
         }
-        stage('PROD master') {
+        stage('Predeploy-master') {
             when {
-                branch 'master'
+                expression {
+                    env.BRANCH_NAME == 'master'
+                }
             }
+            steps {
+                env.DEPLOY_ENV = 'CorpSite PROD'
+            }
+        }
+        stage('PROD') {
             steps {
                 snDevOpsStep()
                 snDevOpsChange()
@@ -101,7 +110,7 @@ pipeline {
                     sshPublisher(continueOnError: false, failOnError: true,
                     publishers: [
                         sshPublisherDesc(
-                            configName:'CorpSite PROD',
+                            configName: ${env.DEPLOY_ENV},
                             verbose: true,
                             transfers: [
                                 sshTransfer(

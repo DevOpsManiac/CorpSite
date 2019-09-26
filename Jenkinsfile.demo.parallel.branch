@@ -91,16 +91,15 @@ pipeline {
         }
         stage('PROD') {
             snDevOpsStep
-                stage('UAT') {
+                stage('deploy UAT') {
                     when {
-                        branch 'development'
+                        branch 'dev'
                     }
                     steps {
                         
                     }
                 }
-                
-                stage('PROD') {
+                stage('deploy PROD') {
                     when {
                         branch 'master'
                     }
