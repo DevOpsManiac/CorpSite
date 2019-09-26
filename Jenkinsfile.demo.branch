@@ -82,7 +82,7 @@ pipeline {
                 }
             }
         }
-        stage('PROD') {
+        
            stage('PROD dev') {
                 when {
                     branch 'dev'
@@ -118,6 +118,6 @@ pipeline {
                 }
                 
             }
-        }
+        
     }
 }
