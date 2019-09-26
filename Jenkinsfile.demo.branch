@@ -4,7 +4,7 @@ pipeline {
         maven 'Jenkins Maven' 
     }
     environment {
-        DEPLOY_ENV = 'UAT'
+        DEPLOY_ENV = "CorpSite UAT"
     }
     stages {
         stage('CI') {
@@ -85,21 +85,7 @@ pipeline {
                 }
             }
         }
-        stage('Predeploy-dev') {
-            when {
-                expression {
-                    env.BRANCH_NAME == 'dev'
-                }
-            }
-            environment {
-                DEPLOY_ENV = "CorpSite UAT"
-            }
-            steps {
-                sh 'echo "hi"'
-            }
-            
-        }
-        stage('Predeploy-master') {
+        stage('PROD') {
             when {
                 expression {
                     env.BRANCH_NAME == 'master'
@@ -108,11 +94,6 @@ pipeline {
             environment {
                 DEPLOY_ENV = "CorpSite PROD"
             }
-            steps {
-                sh 'echo "hi"'
-            }
-        }
-        stage('PROD') {
             steps {
                 snDevOpsStep()
                 snDevOpsChange()
