@@ -85,7 +85,21 @@ pipeline {
                 }
             }
         }
-        stage('PROD') {
+        stage('Predeploy-dev') {
+            when {
+                expression {
+                    env.BRANCH_NAME == 'dev'
+                }
+            }
+            environment {
+                DEPLOY_ENV = "CorpSite UAT"
+            }
+            steps {
+                sh 'echo "hi"'
+            }
+            
+        }
+        stage('Predeploy-master') {
             when {
                 expression {
                     env.BRANCH_NAME == 'master'
@@ -94,6 +108,11 @@ pipeline {
             environment {
                 DEPLOY_ENV = "CorpSite PROD"
             }
+            steps {
+                sh 'echo "hi"'
+            }
+        }
+        stage('PROD') {
             steps {
                 snDevOpsStep()
                 snDevOpsChange()
