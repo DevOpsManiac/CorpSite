@@ -94,9 +94,7 @@ pipeline {
             environment {
                 DEPLOY_ENV = "CorpSite UAT"
             }
-            steps {
-
-            }
+            
         }
         stage('Predeploy-master') {
             when {
@@ -107,9 +105,7 @@ pipeline {
             environment {
                 DEPLOY_ENV = "CorpSite PROD"
             }
-            steps {
-                
-            }
+            
         }
         stage('PROD') {
             steps {
