@@ -83,41 +83,40 @@ pipeline {
             }
         }
         stage('PROD') {
-            parallel {
-                stage('UAT') {
-                    when {
-                        branch 'dev'
-                    }
-                    steps {
+           
+                when {
+                    branch 'dev'
+                }
+                steps {
                     snDevOpsStep() 
-                    }
                 }
+            
+            
+       
+                when {
+                    branch 'master'
+                }
+                steps {
+                    snDevOpsStep()
+                    snDevOpsChange()
+                    script {
+                        sshPublisher(continueOnError: false, failOnError: true,
+                        publishers: [
+                            sshPublisherDesc(
+                                configName:'CorpSite PROD',
+                                verbose: true,
+                                transfers: [
+                                    sshTransfer(
+                                        sourceFiles: 'target/globex-web.war',
+                                        removePrefix: 'target/',
+                                        remoteDirectory: '/opt/tomcat/webapps'
+                                    )
+                                ]
+                            )
+                        ])
+                    }
                 
-                stage('PROD') {
-                    when {
-                        branch 'master'
-                    }
-                    steps {
-                        snDevOpsStep()
-                        snDevOpsChange()
-                        script {
-                            sshPublisher(continueOnError: false, failOnError: true,
-                            publishers: [
-                                sshPublisherDesc(
-                                    configName:'CorpSite PROD',
-                                    verbose: true,
-                                    transfers: [
-                                        sshTransfer(
-                                            sourceFiles: 'target/globex-web.war',
-                                            removePrefix: 'target/',
-                                            remoteDirectory: '/opt/tomcat/webapps'
-                                        )
-                                    ]
-                                )
-                            ])
-                        }
-                    }
-                }
+                
             }
         }
     }
