@@ -91,8 +91,11 @@ pipeline {
                     env.BRANCH_NAME == 'dev'
                 }
             }
-            steps {
+            environment {
                 DEPLOY_ENV = "CorpSite UAT"
+            }
+            steps {
+
             }
         }
         stage('Predeploy-master') {
@@ -101,8 +104,11 @@ pipeline {
                     env.BRANCH_NAME == 'master'
                 }
             }
-            steps {
+            environment {
                 DEPLOY_ENV = "CorpSite PROD"
+            }
+            steps {
+                
             }
         }
         stage('PROD') {
