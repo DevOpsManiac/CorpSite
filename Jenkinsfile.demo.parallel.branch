@@ -90,38 +90,36 @@ pipeline {
             }
         }
         stage('PROD') {
-            snDevOpsStep
-                stage('deploy UAT') {
-                    when {
-                        branch 'dev'
-                    }
-                    steps {
-                        
-                    }
+            stage('deploy UAT') {
+                when {
+                    branch 'dev'
                 }
-                stage('deploy PROD') {
-                    when {
-                        branch 'master'
-                    }
-                    snDevOpsStep ''
-                    steps {
-                        snDevOpsChange('master')
-                        script {
-                            sshPublisher(continueOnError: false, failOnError: true,
-                            publishers: [
-                                sshPublisherDesc(
-                                    configName:'CorpSite PROD',
-                                    verbose: true,
-                                    transfers: [
-                                        sshTransfer(
-                                            sourceFiles: 'target/globex-web.war',
-                                            removePrefix: 'target/',
-                                            remoteDirectory: '/opt/tomcat/webapps'
-                                        )
-                                    ]
-                                )
-                            ])
-                        }
+                steps {
+                    snDevOpsStep()
+                }
+            }
+            stage('deploy PROD') {
+                when {
+                    branch 'master'
+                }
+                steps {
+                    snDevOpsStep()
+                    snDevOpsChange()
+                    script {
+                        sshPublisher(continueOnError: false, failOnError: true,
+                        publishers: [
+                            sshPublisherDesc(
+                                configName:'CorpSite PROD',
+                                verbose: true,
+                                transfers: [
+                                    sshTransfer(
+                                        sourceFiles: 'target/globex-web.war',
+                                        removePrefix: 'target/',
+                                        remoteDirectory: '/opt/tomcat/webapps'
+                                    )
+                                ]
+                            )
+                        ])
                     }
                 }
             }
