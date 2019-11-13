@@ -14,7 +14,7 @@
     </head>
     
     <!-- A Comment  -->
-    <!-- added complex code  -->
+    <!-- fixed a defect  -->
     
     <body class="btn-rounded scroll-assist">
         <div class="nav-container">
