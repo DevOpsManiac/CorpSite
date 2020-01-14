@@ -51,6 +51,7 @@ pipeline {
                 sh 'mvn compile'
                 sh 'mvn verify'
 
+                /*
                 sh '''
                     mvn sonar:sonar \
                     -Dsonar.projectKey=CorpSite \
@@ -60,6 +61,7 @@ pipeline {
                     -Dsonar.analysis.scm=$GIT_COMMIT \
                     -Dsonar.analysis.buildURL=$BUILD_URL
                 '''
+                */
             }
             post {
                 success {
