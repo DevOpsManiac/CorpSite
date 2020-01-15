@@ -21,6 +21,7 @@ pipeline {
                 }
             }
         }
+        
         stage('Test') {
             steps {
                 snDevOpsStep()
@@ -69,6 +70,7 @@ pipeline {
                 }
             }
         }
+
         stage('Prod') {
             steps {
                 snDevOpsStep()
