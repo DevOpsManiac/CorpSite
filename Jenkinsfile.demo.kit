@@ -3,6 +3,7 @@ pipeline {
     tools { 
         maven 'Jenkins Maven' 
     }
+    
     stages {
         stage('Build') {
             steps {
@@ -21,7 +22,7 @@ pipeline {
                 }
             }
         }
-        
+
         stage('Test') {
             steps {
                 snDevOpsStep()
