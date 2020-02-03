@@ -1,0 +1,32 @@
+pipeline {
+    agent any
+    tools { 
+        maven 'Jenkins Maven' 
+    }
+    
+    stages {
+        stage('Prod') {
+            steps {
+                snDevOpsStep()
+                snDevOpsChange()
+                snDevOpsPackage(name: "package", artifactsPayload: """{"artifacts": [{"name": "globex-web.war","repositoryName": "whoknows","version":"2.13"}]}""")
+                script {                
+                    sshPublisher(continueOnError: false, failOnError: true,
+                    publishers: [
+                        sshPublisherDesc(
+                            configName:'CorpSite PROD',
+                            verbose: true,
+                            transfers: [
+                                sshTransfer(
+                                    sourceFiles: 'target/globex-web.war',
+                                    removePrefix: 'target/',
+                                    remoteDirectory: '/opt/tomcat/webapps'
+                                )
+                            ]
+                        )
+                    ])
+                }
+            }
+        }
+    }
+}
