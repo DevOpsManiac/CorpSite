@@ -9,7 +9,7 @@ pipeline {
             steps {
                 snDevOpsStep()
                 snDevOpsChange()
-                snDevOpsPackage(name: "package", artifactsPayload: """{"artifacts": [{"name": "globex-web.war","repositoryName": "whoknows","version":"2.13"}]}""")
+                snDevOpsPackage(name: "package", artifactsPayload: """{"artifacts": [{"name": "globex-web.war","repositoryName": "whoknows","version":"2.0.0-SNAPSHOT-2"}]}""")
                 script {                
                     sshPublisher(continueOnError: false, failOnError: true,
                     publishers: [
