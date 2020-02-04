@@ -4,7 +4,6 @@ pipeline {
         maven 'Jenkins Maven' 
     }
 
-    
     stages {
         stage('Build') {
             steps {
