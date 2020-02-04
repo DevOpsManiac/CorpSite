@@ -4,7 +4,6 @@ pipeline {
         maven 'Jenkins Maven' 
     }
 
-    
     stages {
         stage('Build') {
             steps {
@@ -50,11 +49,9 @@ pipeline {
                         )
                     ])
                 }
-
                 sh 'mvn compile'
                 sh 'mvn verify'
-
-                snDevOpsArtifact(artifactsPayload:"""{"artifacts": [{"name": "globex-web.war","version":"${GIT_BRANCH}-${BUILD_NUMBER}","semanticVersion": "${GIT_BRANCH}-${BUILD_NUMBER}","repositoryName": "whoknows"}]}""")
+                snDevOpsArtifact(artifactsPayload:"""{"artifacts": [{"name": "globex-web.war","version":"2.0.0-SNAPSHOT-${BUILD_NUMBER}","semanticVersion": "2.0.0-SNAPSHOT-${BUILD_NUMBER}","repositoryName": "whoknows"}]}""")
             }
             post {
                 success {
