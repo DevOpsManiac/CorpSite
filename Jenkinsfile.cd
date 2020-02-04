@@ -5,6 +5,11 @@ pipeline {
     }
     
     stages {
+        stage('Setup') {
+            steps {
+                
+            }
+        }
         stage('Prod') {
             steps {
                 snDevOpsStep()
