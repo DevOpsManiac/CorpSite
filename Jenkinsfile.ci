@@ -51,6 +51,7 @@ pipeline {
                 }
                 sh 'mvn compile'
                 sh 'mvn verify'
+                
                 snDevOpsArtifact(artifactsPayload:"""{"artifacts": [{"name": "globex-web.war","version":"2.0.0-SNAPSHOT-${BUILD_NUMBER}","semanticVersion": "2.0.0-SNAPSHOT-${BUILD_NUMBER}","repositoryName": "whoknows"}]}""")
             }
             post {
