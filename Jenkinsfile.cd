@@ -5,11 +5,16 @@ pipeline {
     }
     
     stages {
+        stage('Setup') {
+            steps {
+                snDevOpsStep()
+                snDevOpsPackage(name: "package", artifactsPayload: """{"artifacts": [{"name": "globex-web.war","repositoryName": "demo_repo","version":"2.0.0"}]}""")
+            }
+        }
         stage('Prod') {
             steps {
                 snDevOpsStep()
                 snDevOpsChange()
-                snDevOpsPackage(name: "package", artifactsPayload: """{"artifacts": [{"name": "globex-web.war","repositoryName": "whoknows","version":"2.13"}]}""")
                 script {                
                     sshPublisher(continueOnError: false, failOnError: true,
                     publishers: [
