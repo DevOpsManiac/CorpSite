@@ -8,7 +8,7 @@ pipeline {
         stage('Setup') {
             steps {
                 snDevOpsStep()
-                snDevOpsPackage(name: "package", artifactsPayload: """{"artifacts": [{"name": "globex-web.war","repositoryName": "demo_repo","version":"${artifactVersion}"]}""")}
+                snDevOpsPackage(name: "package", artifactsPayload: """{"artifacts": [{"name": "globex-web.war", "repositoryName": "demo_repo", "version": "${artifactVersion}"}]}""")}
         }
         stage('Prod') {
             steps {
