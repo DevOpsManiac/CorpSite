@@ -9,6 +9,7 @@ pipeline {
             steps {
                 snDevOpsStep()
                 snDevOpsPackage(name: "package", artifactsPayload: """{"artifacts": [{"name": "globex-web.war", "repositoryName": "Repo1", "version": "${artifactVersion}"}]}""")}
+            }
         }
         stage('Prod') {
             steps {
