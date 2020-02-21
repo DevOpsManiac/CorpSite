@@ -1,14 +1,12 @@
 #!/bin/sh
-#
-# A hook script to check the commit log message for the presence of 
-# a work item id at the begining.
-# place this in .git/hooks
+# A hook script to check the commit log message for the presence of a work item id at the beginning.
+# Place this in .git/hooks of your cloned repo and commit it
 
-commit_regex='(^[a-zA-Z0-9\-]+\:)'
-error_msg="No work item id in commit message."
+#commit_regex='(^STRY[0-9]+\:)' # for ServiceNow stories
+commit_regex='(^[a-zA-Z0-9\_]+\:)' # for alphanum work item ids with dashes and/or underscores
 
 if ! grep -iqE "$commit_regex" "$1"; then
-    echo "$error_msg" >&2
-    #exit 0 if you want to warn but not abort
-    exit 1
+    echo "No work item id in commit message." >&2
+    #exit 0 # if you want to warn but not abort on error
+    exit 1 # if you want to abort on error
 fi
