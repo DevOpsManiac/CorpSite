@@ -59,7 +59,7 @@
                                             <a href="#">Brasilia</a>
                                         </li>
                                           <li>
-                                            <a href="#">Manaus</a>
+                                            <a href="#">Sergipe</a>
                                         </li>
                                       
                                     </ul>
