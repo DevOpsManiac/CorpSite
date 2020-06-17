@@ -56,7 +56,7 @@
                                             <a href="#">Goiania City</a>
                                         </li>
                                          <li>
-                                            <a href="#">Brasilia</a>
+                                            <a href="#">SP</a>
                                         </li> 
                                     </ul>
                                 </li>
