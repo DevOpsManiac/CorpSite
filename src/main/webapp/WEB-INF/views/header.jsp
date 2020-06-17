@@ -58,10 +58,6 @@
                                          <li>
                                             <a href="#">Brasilia</a>
                                         </li>
-                                          <li>
-                                            <a href="#">Sergipe</a>
-                                        </li>
-                                      
                                     </ul>
                                 </li>
                             </ul>
