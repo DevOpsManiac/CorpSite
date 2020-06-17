@@ -56,7 +56,7 @@
                                             <a href="#">Goiania City</a>
                                         </li>
                                          <li>
-                                            <a href="#">Guara City</a>
+                                            <a href="#">Jundiai</a>
                                         </li> 
                                     </ul>
                                 </li>
