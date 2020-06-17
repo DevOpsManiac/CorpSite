@@ -52,12 +52,6 @@
                                         <li>
                                             <a href="#">Secret Mountain</a>
                                         </li>
-                                           <li>
-                                            <a href="#">Goiania City</a>
-                                        </li>
-                                         <li>
-                                            <a href="#">Jundiai</a>
-                                        </li> 
                                     </ul>
                                 </li>
                             </ul>
