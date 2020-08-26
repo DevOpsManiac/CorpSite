@@ -55,9 +55,6 @@
                                          <li>
                                             <a href="#">Brasilia City</a>
                                         </li>
-                                         <li>
-                                            <a href="#">São Paulo2 City</a>
-                                        </li>
                                     </ul>
                                 </li>
                             </ul>
