@@ -6,6 +6,9 @@ pipeline {
                 snDevOpsStep()
                 sh 'mvn compile'
                 sh 'mvn verify'
+                withSonarQubeEnv('SonarQube') {
+                sh "mvn clean package sonar:sonar"
+              }
             }
             post {
                 success {
