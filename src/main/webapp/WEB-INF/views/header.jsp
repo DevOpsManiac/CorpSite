@@ -55,9 +55,7 @@
                                         <li>
                                             <a href="#">Brasilia City</a>
                                         </li>
-                                       <li>
-                                            <a href="#">Goiania City Capital</a>
-                                       </li>
+                                    
                                     </ul>
                                 </li>
                             </ul>
