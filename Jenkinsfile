@@ -1,8 +1,10 @@
 pipeline {
     agent any
+    /*
     tools { 
         maven 'Jenkins Maven' 
     }
+    */
     stages {
         stage('CI') {
             steps {
