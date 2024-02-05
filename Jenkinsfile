@@ -49,7 +49,7 @@ pipeline {
     stage('Producao') {
             steps {
                 snDevOpsStep()
-                snDevOpsChange(artifactsPayload:"""{"artifacts": [{"name": "globex-web.war","version":"2.${env.BUILD_NUMBER}.0","semanticVersion": "2.${env.BUILD_NUMBER}.0","repositoryName": "Repo1"}]}""")
+                snDevOpsChange()
                 sh 'mv -f target/globex-web.war /opt/tomcat/webapps/globex-prod.war'
                 sh 'sudo systemctl stop tomcat9.service'
                 sh 'echo ################ Reiniciando o Tomcat #############'
