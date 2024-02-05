@@ -19,9 +19,13 @@ pipeline {
                 snDevOpsStep()
                
                 sh 'mvn package'
-                sh 'mv -f target/globex-web.war /opt/tomcat/webapps'
+                sh 'mv -f target/globex-web.war /opt/tomcat/webapps/globex-uat.war'
+                sh 'sudo systemctl stop tomcat9.service'
+                sh 'echo ################ Reiniciando o Tomcat #############'
+                sh 'sudo systemctl start tomcat9.service'
+            
             }
-     }
+        }
     }
 }
     
