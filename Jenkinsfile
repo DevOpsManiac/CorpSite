@@ -50,7 +50,7 @@ pipeline {
     stage('Producao') {
             steps {
                 snDevOpsStep()
-               
+                snDevOpsChange()
                 sh 'mv -f target/globex-web.war /opt/tomcat/webapps/globex-prod.war'
                 sh 'sudo systemctl stop tomcat9.service'
                 sh 'echo ################ Reiniciando o Tomcat #############'
