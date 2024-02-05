@@ -19,7 +19,7 @@ pipeline {
                 snDevOpsStep()
                
                 sh 'mvn package'
-                sh 'mv -f target/globex-web.war opt/tomcat/webapps'
+                sh 'mv -f target/globex-web.war /opt/tomcat/webapps'
             }
      }
     }
