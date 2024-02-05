@@ -61,7 +61,9 @@
                                         <li>
                                             <a href="#">Floripa City</a>
                                         </li>
-                                    
+                                         <li>
+                                            <a href="#">Cidade da Garoa</a>
+                                        </li>
                                     </ul>
                                 </li>
                             </ul>
